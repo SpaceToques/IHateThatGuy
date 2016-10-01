@@ -50,3 +50,6 @@ TagManager:
   - name: People
     uniqueID: 3528012301
     locked: 0
+  - name: Items
+    uniqueID: 1219412881
+    locked: 0
