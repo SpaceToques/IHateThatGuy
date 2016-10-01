@@ -51,9 +51,8 @@ public class Ghost : MonoBehaviour {
             item.PickUp(this.gameObject);
             Debug.Log("Picked up " + item.gameObject);
         }
-        if (Input.GetButton("Fire2")
-                && other.gameObject.GetComponent<Interactable>() != null
-                && item != null)
+        if (Input.GetButton("Jump")
+                && other.gameObject.GetComponent<Interactable>() != null)
         {
             if (item != null) {
                 other.GetComponent<Interactable>().Interact(item.gameObject);

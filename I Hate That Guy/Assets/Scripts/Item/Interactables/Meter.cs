@@ -3,7 +3,7 @@ using System.Collections;
 using System;
 
 public class Meter : Interactable {
-    public override void Interact(GameObject interactor) {
+    protected override void InteractAction(GameObject interactor) {
         base.Interact(interactor);
 
         if (interactor.GetComponent<Wrench>() != null) {
