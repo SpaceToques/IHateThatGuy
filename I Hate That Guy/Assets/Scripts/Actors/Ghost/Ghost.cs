@@ -41,6 +41,7 @@ public class Ghost : MonoBehaviour {
 
     void OnTriggerStay2D(Collider2D other)
     {
+        Debug.Log(other);
         // pick up item
         if (Input.GetButton("Jump")
             && other.gameObject.GetComponent<Pickupable>() != null
@@ -50,11 +51,14 @@ public class Ghost : MonoBehaviour {
             item.PickUp(this.gameObject);
             Debug.Log("Picked up " + item.gameObject);
         }
-        else if (Input.GetButton("Fire2")
+        if (Input.GetButton("Fire2")
                 && other.gameObject.GetComponent<Interactable>() != null
                 && item != null)
         {
-            //item.GetComponent<Pickupable>().InteractWith(other.gameObject);
+            if (item != null) {
+                other.GetComponent<Interactable>().Interact(item.gameObject);
+            }
+            other.GetComponent<Interactable>().Interact(this.gameObject);
         }
         
     }

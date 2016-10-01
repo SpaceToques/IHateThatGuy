@@ -5,8 +5,6 @@ using System.Collections.Generic;
 
 [Serializable]
 public class GameState : Listenable<GameStateListener> {
-    
-    public GameObject[] listeners;
 
     public bool _fire;
     public bool fire
@@ -57,25 +55,4 @@ public class GameState : Listenable<GameStateListener> {
             }
         }
     }
-
-    // Use this for initialization
-    public override void Start() {
-        base.Start();
-        hullDamaged = false;
-        fire = false;
-        aliensMad = false;
-
-        foreach (GameObject listener in listeners)
-        {
-            GameStateListener listenerScript = listener.GetComponent<GameStateListener>();
-            this.AddListener(listenerScript);
-        }
-	}
-	
-	// Update is called once per frame
-	public override void Update () {
-	
-	}
-
-
 }
