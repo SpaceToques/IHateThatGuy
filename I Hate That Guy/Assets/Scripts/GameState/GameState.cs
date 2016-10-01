@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System;
+using System.Collections.Generic;
 
 [Serializable]
 public class GameState : Listenable<GameStateListener> {
@@ -8,15 +9,25 @@ public class GameState : Listenable<GameStateListener> {
     public bool fire;
     public bool aliensMad;
 
+    [SerializeField]
+    public GameObject[] listeners;
+
 	// Use this for initialization
-	void Start () {
+	public override void Start() {
+        base.Start();
         hullDamaged = false;
         fire = false;
         aliensMad = false;
+
+        foreach (GameObject listener in listeners)
+        {
+            GameStateListener listenerScript = listener.GetComponent<GameStateListener>();
+            this.AddListener(listenerScript);
+        }
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	public override void Update () {
 	
 	}
 

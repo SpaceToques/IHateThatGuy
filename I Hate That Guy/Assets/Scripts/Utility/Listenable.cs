@@ -8,8 +8,20 @@ using System;
 /// <see cref="Listener"/>
 /// </summary>
 /// <typeparam name="T"></typeparam>
-public abstract class Listenable<T> where T : Listener {
+[Serializable]
+public class Listenable<T> : MonoBehaviour where T : Listener {
     List<T> listeners;
+    bool hello;
+
+    public virtual void Start()
+    {
+        listeners = new List<T>();
+    }
+
+    public virtual void Update()
+    {
+
+    }
 
     public void AddListener(T listener)
     {
