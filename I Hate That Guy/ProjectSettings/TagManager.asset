@@ -47,3 +47,6 @@ TagManager:
   - name: Ship
     uniqueID: 3037497291
     locked: 0
+  - name: People
+    uniqueID: 3528012301
+    locked: 0
