@@ -64,6 +64,7 @@ public class Danny : MonoBehaviour {
         if (other.gameObject.GetComponent<Room>() != null) {
             this.x = other.gameObject.GetComponent<Room>().getX();
             this.y = other.gameObject.GetComponent<Room>().getY();
+            //Debug.Log("Danny is in (" + this.x + ", " + this.y + ")");
         }
     }
 }

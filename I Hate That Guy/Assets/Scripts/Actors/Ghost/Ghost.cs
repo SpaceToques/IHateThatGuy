@@ -63,7 +63,7 @@ public class Ghost : MonoBehaviour {
         if (other.gameObject.GetComponent<Room>() != null) {
             this.a = other.gameObject.GetComponent<Room>().getX();
             this.b = other.gameObject.GetComponent<Room>().getY();
-            Debug.Log("Player is in (" + this.a + ", " + this.b + ")");
+            //Debug.Log("Player is in (" + this.a + ", " + this.b + ")");
         }
 
     }
