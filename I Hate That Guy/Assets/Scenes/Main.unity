@@ -232,6 +232,7 @@ GameObject:
   - 212: {fileID: 207128904}
   - 114: {fileID: 207128903}
   - 61: {fileID: 207128906}
+  - 114: {fileID: 207128907}
   m_Layer: 8
   m_Name: Ghost
   m_TagString: Untagged
@@ -313,6 +314,26 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.25}
+--- !u!114 &207128907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 207128902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2efac68d703c8b4e89ccb7baa76185a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 21300000, guid: ffc553f17f91bb140aee6de535edee11, type: 3}
+  - {fileID: 21300000, guid: edb566b705c40f545a6e07b43e0c8e47, type: 3}
+  - {fileID: 21300000, guid: 8d3dc7131d954c94ab939b7514dbd082, type: 3}
+  - {fileID: 21300000, guid: dedf9b1d7b1a7064d9773c9964eebce6, type: 3}
+  - {fileID: 21300000, guid: d2ec9472eaae0bf4eb6450690b064e5a, type: 3}
+  - {fileID: 21300000, guid: c07cc2a8a9e4e204193c38c83c668c6d, type: 3}
+  - {fileID: 21300000, guid: 0e4fbdb5f547cf24fb7b83d7b77366d3, type: 3}
+  - {fileID: 21300000, guid: 96c898ebfa06ac64ea541730f9bcd16c, type: 3}
 --- !u!1 &315152722
 GameObject:
   m_ObjectHideFlags: 0
@@ -1251,7 +1272,7 @@ GameObject:
   - 4: {fileID: 1862032548}
   - 212: {fileID: 1862032547}
   m_Layer: 0
-  m_Name: Binary
+  m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
