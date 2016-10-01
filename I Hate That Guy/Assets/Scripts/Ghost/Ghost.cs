@@ -27,6 +27,7 @@ public class Ghost : MonoBehaviour {
         // drop item
         if (item != null && Input.GetButton("Fire1"))
         {
+            item.GetComponent<Rigidbody2D>().isKinematic = false;
             item.transform.parent = null;
             item = null;
         }
@@ -41,6 +42,7 @@ public class Ghost : MonoBehaviour {
         {
             item = other.gameObject;
             item.transform.SetParent(gameObject.transform);
+            item.GetComponent<Rigidbody2D>().isKinematic = true;
         }
         else
         {
