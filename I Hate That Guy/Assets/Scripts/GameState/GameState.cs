@@ -10,11 +10,11 @@ public class GameState : Listenable<GameStateListener> {
     public bool fire
     {
         get { return _fire; }
-
         set {
             if (_fire != value) {
                 _fire = value;
                 ForEachListener(listener => listener.fire(value));
+                Debug.Log("Game State: Fire is " + fire);
             }
         }
     }
@@ -28,6 +28,7 @@ public class GameState : Listenable<GameStateListener> {
             if (_hullDamaged != value) {
                 _hullDamaged = value;
                 ForEachListener(listener => listener.hullDamaged(_hullDamaged));
+                Debug.Log("Game State: Hull Damaged is " + hullDamaged);
             }
         }
     }
@@ -40,6 +41,7 @@ public class GameState : Listenable<GameStateListener> {
             if (_aliensMad != value) {
                 _aliensMad = value;
                 ForEachListener(listener => listener.aliensMad(aliensMad));
+                Debug.Log("Game State: Aliens Mad is " + aliensMad);
             }
         }
     }
@@ -51,6 +53,7 @@ public class GameState : Listenable<GameStateListener> {
             if (_meterBroken) {
                 _meterBroken = value;
                 ForEachListener(listener => listener.meterBroken(meterBroken));
+                Debug.Log("Game State: Meter Broken is " + meterBroken);
             }
         }
     }
@@ -62,6 +65,7 @@ public class GameState : Listenable<GameStateListener> {
             if (_shieldsDown) {
                 _shieldsDown = value;
                 ForEachListener(listener => listener.shieldsDown(shieldsDown));
+                Debug.Log("Game State: Shields Down is " + shieldsDown);
             }
         }
     }
