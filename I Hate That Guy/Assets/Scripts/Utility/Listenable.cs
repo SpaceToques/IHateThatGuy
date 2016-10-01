@@ -14,7 +14,7 @@ public class Listenable<T> : MonoBehaviour where T : Listener {
 
     public virtual void Start()
     {
-        listeners = new List<T>();
+
     }
 
     public virtual void Update()

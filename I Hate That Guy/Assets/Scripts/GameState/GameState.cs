@@ -36,11 +36,10 @@ public class GameState : Listenable<GameStateListener> {
     public bool aliensMad
     {
         get { return _aliensMad; }
-
         set {
             if (_aliensMad != value) {
                 _aliensMad = value;
-                ForEachListener(listener => listener.hullDamaged(aliensMad));
+                ForEachListener(listener => listener.aliensMad(aliensMad));
             }
         }
     }
