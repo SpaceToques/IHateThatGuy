@@ -11,6 +11,7 @@ public class Ghost : MonoBehaviour {
     private float x;
     private float y;
     public float maxHoldDist;
+    private int a, b;
 
 	// Use this for initialization
 	void Start ()
@@ -41,7 +42,6 @@ public class Ghost : MonoBehaviour {
 
     void OnTriggerStay2D(Collider2D other)
     {
-        Debug.Log(other);
         // pick up item
         if (Input.GetButton("Jump")
             && other.gameObject.GetComponent<Pickupable>() != null
@@ -60,6 +60,12 @@ public class Ghost : MonoBehaviour {
             }
             other.GetComponent<Interactable>().Interact(this.gameObject);
         }
-        
+
+        if (other.gameObject.GetComponent<Room>() != null) {
+            this.a = other.gameObject.GetComponent<Room>().getX();
+            this.b = other.gameObject.GetComponent<Room>().getY();
+            Debug.Log("Player is in (" + this.a + ", " + this.b + ")");
+        }
+
     }
 }
