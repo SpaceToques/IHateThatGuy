@@ -15,24 +15,27 @@ public class Danny : MonoBehaviour {
 
     public float speed = 1.5f;
     private float x, y;
+    private int vx, vy;
 
 	// Use this for initialization
 	void Start () {
         WalkTo(0, 2);
-	}
+    }
 	
 	// Update is called once per frame
 	void Update () {
-        x = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
-        y = Input.GetAxis("Vertical") * speed * Time.deltaTime;
+        x = vx * speed * Time.deltaTime;
+        y = vy * speed * Time.deltaTime;
         transform.Translate(x, y, 0);
+        WalkTo(0, 2);
     }
 
     void WalkTo (int a2, int b2) {
         // Begin trek to a new room on the grid
         if (this.b != b2) {
             MoveToLadderFrom(this.a, this.b);
-            // Climb(b2-this.b)
+            //if ((a==0 && b==2) || )
+                //Climb(b2-this.b)
         }
         // move left/right
     }
@@ -41,9 +44,14 @@ public class Danny : MonoBehaviour {
     void MoveToLadderFrom(int a, int b) {
         if (b != 2) { // if not the top floor
             if (a < 3) { // to the left of the ladder
-
-            } else { // to the right of the ladder
-
+                vx = 1;
+                vy = 0;
+            } else if (a > 3) { // to the right of the ladder
+                vx = -1;
+                vy = 0;
+            } else {
+                vx = 0;
+                vy = 0;
             }
         } else {
             // just move right
@@ -86,7 +94,7 @@ public class Danny : MonoBehaviour {
         if (other.gameObject.GetComponent<Room>() != null) {
             this.a = other.gameObject.GetComponent<Room>().getX();
             this.b = other.gameObject.GetComponent<Room>().getY();
-            //Debug.Log("Danny is in (" + this.x + ", " + this.y + ")");
+            //Debug.Log("Danny is in (" + this.a + ", " + this.b + ")");
         }
     }
 }
