@@ -2,6 +2,7 @@
 using System.Collections;
 
 public abstract class Interactable : Item {
+    protected GameState gameState = GameObject.Find("GameState").GetComponent<GameState>();
 
 	// Use this for initialization
 	void Start () {
@@ -12,5 +13,7 @@ public abstract class Interactable : Item {
 	void Update () {
 	
 	}
+
+    public abstract void Interact(GameObject interactor);
 
 }

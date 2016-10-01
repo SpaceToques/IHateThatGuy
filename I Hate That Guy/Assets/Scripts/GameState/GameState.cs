@@ -13,10 +13,8 @@ public class GameState : Listenable<GameStateListener> {
     {
         get { return _fire; }
 
-        set
-        {
-            if (_fire != value)
-            {
+        set {
+            if (_fire != value) {
                 _fire = value;
                 ForEachListener(listener => listener.fire(value));
             }
@@ -28,10 +26,8 @@ public class GameState : Listenable<GameStateListener> {
     {
         get { return _hullDamaged; }
 
-        set
-        {
-            if (_hullDamaged != value)
-            {
+        set {
+            if (_hullDamaged != value) {
                 _hullDamaged = value;
                 ForEachListener(listener => listener.hullDamaged(_hullDamaged));
             }
@@ -43,12 +39,21 @@ public class GameState : Listenable<GameStateListener> {
     {
         get { return _aliensMad; }
 
-        set
-        {
-            if (_aliensMad != value)
-            {
+        set {
+            if (_aliensMad != value) {
                 _aliensMad = value;
                 ForEachListener(listener => listener.hullDamaged(aliensMad));
+            }
+        }
+    }
+
+    public bool _meterBroken;
+    public bool meterBroken { 
+        get { return _meterBroken; }
+        set {
+            if (_meterBroken) {
+                _meterBroken = value;
+                ForEachListener(listener => listener.meterBroken(meterBroken));
             }
         }
     }
