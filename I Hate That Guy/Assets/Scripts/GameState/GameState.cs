@@ -64,4 +64,5 @@ public class GameState : Listenable<GameStateListener> {
                 ForEachListener(listener => listener.shieldsDown(shieldsDown));
             }
         }
+    }
 }
