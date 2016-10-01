@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Meter : MonoBehaviour {
+public class Meter : Interactable {
 
 	// Use this for initialization
 	void Start () {

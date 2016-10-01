@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Shields : MonoBehaviour {
+public class Shields : Interactable {
 
 	// Use this for initialization
 	void Start () {

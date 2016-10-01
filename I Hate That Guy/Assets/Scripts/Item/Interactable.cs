@@ -12,4 +12,5 @@ public abstract class Interactable : Item {
 	void Update () {
 	
 	}
+
 }

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Wires : MonoBehaviour {
+public class Wires : Interactable {
 
 	// Use this for initialization
 	void Start () {
@@ -12,4 +12,5 @@ public class Wires : MonoBehaviour {
 	void Update () {
 	
 	}
+
 }
