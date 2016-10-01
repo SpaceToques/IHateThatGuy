@@ -101,6 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11c027f7c7c5fce4ca7141911b068604, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  layerWhenHeld: Held
 --- !u!114 &114000013316305170
 MonoBehaviour:
   m_ObjectHideFlags: 1

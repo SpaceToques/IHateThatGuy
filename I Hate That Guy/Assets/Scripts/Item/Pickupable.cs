@@ -3,10 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class Pickupable : Item {
+    public string layerWhenHeld = "Held";
+    private string layerWhenDown;
 
 	// Use this for initialization
 	void Start () {
-
+        layerWhenDown = LayerMask.LayerToName(this.gameObject.layer);
 	}
 	
 	// Update is called once per frame
@@ -19,12 +21,12 @@ public class Pickupable : Item {
         this.gameObject.transform.SetParent(pickuper.gameObject.transform);
 
         // Remove certain physics for held objects
-        this.gameObject.layer = LayerMask.NameToLayer("Held");
+        this.gameObject.layer = LayerMask.NameToLayer(layerWhenHeld);
     }
 
     public void Drop() {
         // Readd  certain physics for no longer held items
-        this.gameObject.layer = LayerMask.NameToLayer("Pickupable");
+        this.gameObject.layer = LayerMask.NameToLayer(layerWhenDown);
         this.gameObject.transform.parent = null;
     }
     
