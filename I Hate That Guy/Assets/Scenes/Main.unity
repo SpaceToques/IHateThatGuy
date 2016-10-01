@@ -278,6 +278,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 315152723}
+  - 114: {fileID: 315152724}
   m_Layer: 0
   m_Name: Ladder 0
   m_TagString: Untagged
@@ -298,6 +299,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1249928609}
   m_RootOrder: 4
+--- !u!114 &315152724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 315152722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 820ea6e6a9b48894992ef2bbdcecc844, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &536324909
 GameObject:
   m_ObjectHideFlags: 0
@@ -306,6 +318,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 536324910}
+  - 114: {fileID: 536324911}
   m_Layer: 0
   m_Name: Helm
   m_TagString: Untagged
@@ -326,6 +339,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1249928609}
   m_RootOrder: 8
+--- !u!114 &536324911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 536324909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 820ea6e6a9b48894992ef2bbdcecc844, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &641517649
 GameObject:
   m_ObjectHideFlags: 0
@@ -334,6 +358,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 641517650}
+  - 114: {fileID: 641517651}
   m_Layer: 0
   m_Name: Space Suit Room
   m_TagString: Untagged
@@ -354,6 +379,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1249928609}
   m_RootOrder: 1
+--- !u!114 &641517651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 641517649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 820ea6e6a9b48894992ef2bbdcecc844, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &655084125
 GameObject:
   m_ObjectHideFlags: 0
@@ -362,6 +398,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 655084126}
+  - 114: {fileID: 655084127}
   m_Layer: 0
   m_Name: Life Support Room
   m_TagString: Untagged
@@ -382,6 +419,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1249928609}
   m_RootOrder: 9
+--- !u!114 &655084127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 655084125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 820ea6e6a9b48894992ef2bbdcecc844, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &718959156
 GameObject:
   m_ObjectHideFlags: 0
@@ -477,6 +525,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 818197157}
+  - 114: {fileID: 818197158}
   m_Layer: 0
   m_Name: Engine Room
   m_TagString: Untagged
@@ -497,6 +546,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1249928609}
   m_RootOrder: 5
+--- !u!114 &818197158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 818197156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 820ea6e6a9b48894992ef2bbdcecc844, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &863509768
 GameObject:
   m_ObjectHideFlags: 0
@@ -505,6 +565,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 863509769}
+  - 114: {fileID: 863509770}
   m_Layer: 0
   m_Name: Storage Room
   m_TagString: Untagged
@@ -525,6 +586,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1249928609}
   m_RootOrder: 2
+--- !u!114 &863509770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 863509768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 820ea6e6a9b48894992ef2bbdcecc844, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1239728359
 GameObject:
   m_ObjectHideFlags: 0
@@ -533,6 +605,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1239728360}
+  - 114: {fileID: 1239728361}
   m_Layer: 0
   m_Name: Kitchen
   m_TagString: Untagged
@@ -553,6 +626,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1249928609}
   m_RootOrder: 6
+--- !u!114 &1239728361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1239728359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 820ea6e6a9b48894992ef2bbdcecc844, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1249928607
 GameObject:
   m_ObjectHideFlags: 0
@@ -718,6 +802,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1262540065}
+  - 114: {fileID: 1262540066}
   m_Layer: 0
   m_Name: Ladder 2
   m_TagString: Untagged
@@ -732,12 +817,23 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1262540064}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 1.62, y: -0.94, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1249928609}
   m_RootOrder: 11
+--- !u!114 &1262540066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1262540064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 820ea6e6a9b48894992ef2bbdcecc844, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1372397872
 GameObject:
   m_ObjectHideFlags: 0
@@ -746,6 +842,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1372397873}
+  - 114: {fileID: 1372397874}
   m_Layer: 0
   m_Name: Bedroom
   m_TagString: Untagged
@@ -766,6 +863,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1249928609}
   m_RootOrder: 12
+--- !u!114 &1372397874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1372397872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 820ea6e6a9b48894992ef2bbdcecc844, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1389597734
 GameObject:
   m_ObjectHideFlags: 0
@@ -774,6 +882,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1389597735}
+  - 114: {fileID: 1389597736}
   m_Layer: 0
   m_Name: Ladder 1
   m_TagString: Untagged
@@ -794,6 +903,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1249928609}
   m_RootOrder: 7
+--- !u!114 &1389597736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1389597734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 820ea6e6a9b48894992ef2bbdcecc844, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1559502217
 GameObject:
   m_ObjectHideFlags: 0
@@ -802,6 +922,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1559502218}
+  - 114: {fileID: 1559502219}
   m_Layer: 0
   m_Name: Living Room
   m_TagString: Untagged
@@ -822,6 +943,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1249928609}
   m_RootOrder: 3
+--- !u!114 &1559502219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1559502217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 820ea6e6a9b48894992ef2bbdcecc844, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1660889721
 GameObject:
   m_ObjectHideFlags: 0
@@ -830,6 +962,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1660889722}
+  - 114: {fileID: 1660889723}
   m_Layer: 0
   m_Name: Bathroom
   m_TagString: Untagged
@@ -850,6 +983,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1249928609}
   m_RootOrder: 10
+--- !u!114 &1660889723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1660889721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 820ea6e6a9b48894992ef2bbdcecc844, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1862032546
 GameObject:
   m_ObjectHideFlags: 0
@@ -920,6 +1064,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1927976846}
+  - 114: {fileID: 1927976847}
   m_Layer: 0
   m_Name: Air Lock Room
   m_TagString: Untagged
@@ -940,6 +1085,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1249928609}
   m_RootOrder: 0
+--- !u!114 &1927976847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1927976845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 820ea6e6a9b48894992ef2bbdcecc844, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1934076117
 GameObject:
   m_ObjectHideFlags: 0
