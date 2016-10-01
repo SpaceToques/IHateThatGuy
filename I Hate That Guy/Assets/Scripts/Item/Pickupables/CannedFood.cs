@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CannedFood : Pickupable
+public class CannedFood : MonoBehaviour
 {
 
 	// Use this for initialization
@@ -13,9 +13,4 @@ public class CannedFood : Pickupable
 	void Update () {
 	
 	}
-
-    public override void InteractWith(GameObject i)
-    {
-
-    }
 }

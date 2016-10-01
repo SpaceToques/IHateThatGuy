@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Scissors : Pickupable
+public class Scissors : MonoBehaviour
 {
 
 	// Use this for initialization
@@ -13,9 +13,4 @@ public class Scissors : Pickupable
 	void Update () {
 	
 	}
-
-    public override void InteractWith(GameObject i)
-    {
-
-    }
 }

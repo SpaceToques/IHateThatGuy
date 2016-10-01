@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Knife : Pickupable
+public class Knife : MonoBehaviour
 {
 
 	// Use this for initialization
@@ -13,9 +13,4 @@ public class Knife : Pickupable
 	void Update () {
 	
 	}
-
-    public override void InteractWith(GameObject i)
-    {
-
-    }
 }

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class FireExtinguisher : Pickupable
+public class FireExtinguisher : MonoBehaviour
 {
 
 	// Use this for initialization
@@ -13,9 +13,4 @@ public class FireExtinguisher : Pickupable
 	void Update () {
 	
 	}
-
-    public override void InteractWith(GameObject i)
-    {
-
-    }
 }

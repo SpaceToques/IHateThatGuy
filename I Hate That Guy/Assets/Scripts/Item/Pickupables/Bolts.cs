@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Bolts : Pickupable
+public class Bolts : MonoBehaviour
 {
 
 	// Use this for initialization
@@ -14,9 +14,4 @@ public class Bolts : Pickupable
 	void Update () {
 	
 	}
-
-    public override void InteractWith(GameObject i)
-    {
-
-    }
 }

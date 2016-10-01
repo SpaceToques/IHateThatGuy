@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class SpaceRock : Pickupable
+public class SpaceRock : MonoBehaviour
 {
 
 	// Use this for initialization
@@ -13,9 +13,4 @@ public class SpaceRock : Pickupable
 	void Update () {
 	
 	}
-
-    public override void InteractWith(GameObject i)
-    {
-
-    }
 }

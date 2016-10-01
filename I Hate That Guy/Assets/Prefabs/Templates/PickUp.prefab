@@ -20,11 +20,11 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000012996362030}
   - 212: {fileID: 212000012529114916}
-  - 114: {fileID: 114000012321725238}
   - 50: {fileID: 50000011649823944}
   - 61: {fileID: 61000012342667534}
   - 61: {fileID: 61000011124162712}
-  m_Layer: 0
+  - 114: {fileID: 114000013450445146}
+  m_Layer: 9
   m_Name: PickUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38,8 +38,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011007944190}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.06, y: -0.26, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
@@ -89,7 +89,7 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 0.6, y: 0.92}
---- !u!114 &114000012321725238
+--- !u!114 &114000013450445146
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -97,7 +97,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1000011007944190}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63228ba2128955243ac7e2b2db481cf5, type: 3}
+  m_Script: {fileID: 11500000, guid: 11c027f7c7c5fce4ca7141911b068604, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!212 &212000012529114916

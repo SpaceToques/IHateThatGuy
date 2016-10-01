@@ -7,9 +7,10 @@ using System.Collections;
 public class Ghost : MonoBehaviour {
 
     public float speed = 15;
-    private GameObject item;
+    private Pickupable item;
     private float x;
     private float y;
+    public float maxHoldDist;
 
 	// Use this for initialization
 	void Start ()
@@ -23,13 +24,18 @@ public class Ghost : MonoBehaviour {
         x = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
         y = Input.GetAxis("Vertical") * speed * Time.deltaTime;
         transform.Translate(x, y, 0);
-
+        
         // drop item
-        if (item != null && Input.GetButton("Fire1"))
+        if (item != null)
         {
-            item.GetComponent<Rigidbody2D>().isKinematic = false;
-            item.transform.parent = null;
-            item = null;
+            float itemDist = Vector3.Distance(this.transform.position, item.transform.position);
+
+            if (Input.GetButton("Fire1") || itemDist > maxHoldDist) {
+                Debug.Log("Dropped " + item.gameObject);
+                item.Drop();
+
+                item = null;
+            }
         }
     }
 
@@ -40,9 +46,9 @@ public class Ghost : MonoBehaviour {
             && other.gameObject.GetComponent<Pickupable>() != null
             && item == null)
         {
-            item = other.gameObject;
-            item.transform.SetParent(gameObject.transform);
-            item.GetComponent<Rigidbody2D>().isKinematic = true;
+            item = other.gameObject.GetComponent<Pickupable>();
+            item.PickUp(this.gameObject);
+            Debug.Log("Picked up " + item.gameObject);
         }
         else
         {
@@ -51,7 +57,7 @@ public class Ghost : MonoBehaviour {
                 && other.gameObject.GetComponent<Interactable>() != null
                 && item != null)
             {
-                item.GetComponent<Pickupable>().InteractWith(other.gameObject);
+                //item.GetComponent<Pickupable>().InteractWith(other.gameObject);
             }
         }
     }

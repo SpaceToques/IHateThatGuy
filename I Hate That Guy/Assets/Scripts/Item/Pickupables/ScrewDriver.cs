@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ScrewDriver : Pickupable
+public class ScrewDriver : MonoBehaviour
 {
 
 	// Use this for initialization
@@ -13,9 +13,4 @@ public class ScrewDriver : Pickupable
 	void Update () {
 	
 	}
-
-    public override void InteractWith(GameObject i)
-    {
-
-    }
 }
