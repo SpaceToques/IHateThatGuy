@@ -10,8 +10,8 @@ public class Danny : MonoBehaviour {
     // Ladder coords: [0,4], [1,2], [2,2]
 
     // grid coordinates of Danny
-    List<int> location = new List<int>();
-    List<int> nextLocation = new List<int>(); // coordinates of next room he wants to visit.
+    private int x, y;
+    private int x2, y2; // coordinates of next room he wants to visit.
 
 	// Use this for initialization
 	void Start () {
@@ -32,23 +32,38 @@ public class Danny : MonoBehaviour {
 
     }
 
-    public List<int> getLocation() {
-        return this.location;
+    public int getX() {
+        return this.x;
     }
 
-    public void setLocation(int x, int y) {
-        this.location.Clear();
-        this.location.Add(x);
-        this.location.Add(y);
+    public int getY() {
+        return this.y;
     }
 
-    public List<int> getNextLocation() {
-        return this.nextLocation;
+    public void setX(int i) {
+        this.x = i;
     }
 
-    public void setNextLocation(int x, int y) {
-        this.nextLocation.Clear();
-        this.nextLocation.Add(x);
-        this.nextLocation.Add(y);
+    public void setY(int i) {
+        this.y = i;
+    }
+
+    public int getNextX() {
+        return this.x2;
+    }
+
+    public int getNextY() {
+        return this.y2;
+    }
+
+    public void setNextLocation() {
+
+    }
+    
+    void OnTriggerStay2D(Collider2D other) {
+        if (other.gameObject.GetComponent<Room>() != null) {
+            this.x = other.gameObject.GetComponent<Room>().getX();
+            this.y = other.gameObject.GetComponent<Room>().getY();
+        }
     }
 }
