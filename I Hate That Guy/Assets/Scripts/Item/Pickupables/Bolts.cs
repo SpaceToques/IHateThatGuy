@@ -1,11 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
-using System.Collections.Generic;
 
-public abstract class Pickupable : Item {
+public class Bolts : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+	
 
 	}
 	
@@ -13,7 +13,4 @@ public abstract class Pickupable : Item {
 	void Update () {
 	
 	}
-
-    // make this abstract later
-    public void InteractWith(GameObject i) { }
 }
