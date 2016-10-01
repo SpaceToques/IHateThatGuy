@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Wrench : MonoBehaviour {
+public class Wrench : Pickupable {
 
 	// Use this for initialization
 	void Start () {
@@ -12,4 +12,9 @@ public class Wrench : MonoBehaviour {
 	void Update () {
 	
 	}
+
+    public override void InteractWith(GameObject i)
+    {
+
+    }
 }
