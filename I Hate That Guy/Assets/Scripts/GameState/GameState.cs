@@ -54,4 +54,14 @@ public class GameState : Listenable<GameStateListener> {
             }
         }
     }
+
+    public bool _shieldsDown;
+    public bool shieldsDown {
+        get { return _shieldsDown; }
+        set {
+            if (_shieldsDown) {
+                _shieldsDown = value;
+                ForEachListener(listener => listener.shieldsDown(shieldsDown));
+            }
+        }
 }
