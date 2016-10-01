@@ -2,9 +2,10 @@
 using System.Collections;
 using System;
 
-public interface GameStateListener : Listener
+public abstract class GameStateListener : MonoBehaviour, Listener
 {
-    void hullDamaged(bool hullDamaged);
-    void fire(bool fire);
-    void aliensMad(bool aliensMad);
+    public virtual void hullDamaged(bool hullDamaged) { }
+    public virtual void fire(bool fire) { }
+    public virtual void aliensMad(bool aliensMad) { }
+    public virtual void meterBroken(bool meterBroken) { }
 }
