@@ -11,6 +11,7 @@ public class Ghost : MonoBehaviour {
     private float x;
     private float y;
     public float maxHoldDist;
+    private int a, b;
 
 	// Use this for initialization
 	void Start ()
@@ -50,16 +51,21 @@ public class Ghost : MonoBehaviour {
             item.PickUp(this.gameObject);
             Debug.Log("Picked up " + item.gameObject);
         }
-        else
-        {
-            // use item
-            if (Input.GetButton("Fire2")
+        if (Input.GetButton("Fire2")
                 && other.gameObject.GetComponent<Interactable>() != null
                 && item != null)
-            {
-                //item.GetComponent<Pickupable>().InteractWith(other.gameObject);
+        {
+            if (item != null) {
+                other.GetComponent<Interactable>().Interact(item.gameObject);
             }
+            other.GetComponent<Interactable>().Interact(this.gameObject);
         }
-        // if (other.gameObject.GetComponent<Room>() != null)
+
+        if (other.gameObject.GetComponent<Room>() != null) {
+            this.a = other.gameObject.GetComponent<Room>().getX();
+            this.b = other.gameObject.GetComponent<Room>().getY();
+            Debug.Log("Player is in (" + this.a + ", " + this.b + ")");
+        }
+
     }
 }

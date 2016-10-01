@@ -10,8 +10,7 @@ using System;
 /// <typeparam name="T"></typeparam>
 [Serializable]
 public class Listenable<T> : MonoBehaviour where T : Listener {
-    List<T> listeners;
-    bool hello;
+    public List<T> listeners;
 
     public virtual void Start()
     {

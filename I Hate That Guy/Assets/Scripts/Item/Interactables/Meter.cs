@@ -1,15 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
 
 public class Meter : Interactable {
+    public override void Interact(GameObject interactor) {
+        base.Interact(interactor);
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+        if (interactor.GetComponent<Wrench>() != null) {
+            gameState.meterBroken = true;
+        }
+    }
 }

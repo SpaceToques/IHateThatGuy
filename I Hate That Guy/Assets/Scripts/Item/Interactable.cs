@@ -2,15 +2,13 @@
 using System.Collections;
 
 public abstract class Interactable : Item {
+    protected GameState gameState;
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    public virtual void Start() {
+        gameState = GameObject.Find("GameState").GetComponent<GameState>();
+    }
 
+    public virtual void Interact(GameObject interactor) {
+        Debug.Log("Using " + interactor + " to interact with ");
+    }
 }
