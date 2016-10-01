@@ -279,6 +279,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 315152723}
   - 114: {fileID: 315152724}
+  - 61: {fileID: 315152725}
   m_Layer: 0
   m_Name: Ladder 0
   m_TagString: Untagged
@@ -293,8 +294,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 315152722}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.63, y: 0.72, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 1.632, y: 0.857, z: 0}
+  m_LocalScale: {x: 0.33750054, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1249928609}
@@ -310,6 +311,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 820ea6e6a9b48894992ef2bbdcecc844, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  x: 0
+  y: 4
+--- !u!61 &315152725
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 315152722}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 0.5, y: 0.8}
 --- !u!1 &536324909
 GameObject:
   m_ObjectHideFlags: 0
@@ -319,6 +336,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 536324910}
   - 114: {fileID: 536324911}
+  - 61: {fileID: 536324912}
   m_Layer: 0
   m_Name: Helm
   m_TagString: Untagged
@@ -333,7 +351,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 536324909}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.49, y: 0, z: 0}
+  m_LocalPosition: {x: 2.608, y: -0.018, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -350,6 +368,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 820ea6e6a9b48894992ef2bbdcecc844, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  x: 1
+  y: 3
+--- !u!61 &536324912
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 536324909}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1.75, y: 0.8}
 --- !u!1 &641517649
 GameObject:
   m_ObjectHideFlags: 0
@@ -359,6 +393,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 641517650}
   - 114: {fileID: 641517651}
+  - 61: {fileID: 641517652}
   m_Layer: 0
   m_Name: Space Suit Room
   m_TagString: Untagged
@@ -373,7 +408,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 641517649}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.26, y: 0.85, z: 0}
+  m_LocalPosition: {x: -2.242, y: 0.859, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -390,6 +425,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 820ea6e6a9b48894992ef2bbdcecc844, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  x: 0
+  y: 1
+--- !u!61 &641517652
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 641517649}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 0.9, y: 0.9}
 --- !u!1 &655084125
 GameObject:
   m_ObjectHideFlags: 0
@@ -399,6 +450,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 655084126}
   - 114: {fileID: 655084127}
+  - 61: {fileID: 655084128}
   m_Layer: 0
   m_Name: Life Support Room
   m_TagString: Untagged
@@ -413,7 +465,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 655084125}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.07, y: -0.89, z: 0}
+  m_LocalPosition: {x: -1.955, y: -0.89, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -430,6 +482,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 820ea6e6a9b48894992ef2bbdcecc844, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  x: 2
+  y: 0
+--- !u!61 &655084128
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 655084125}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 3.1, y: 0.8}
 --- !u!1 &718959156
 GameObject:
   m_ObjectHideFlags: 0
@@ -526,6 +594,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 818197157}
   - 114: {fileID: 818197158}
+  - 61: {fileID: 818197159}
   m_Layer: 0
   m_Name: Engine Room
   m_TagString: Untagged
@@ -540,7 +609,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 818197156}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.46, y: -0.07, z: 0}
+  m_LocalPosition: {x: -2.225, y: -0.016, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -557,6 +626,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 820ea6e6a9b48894992ef2bbdcecc844, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  x: 1
+  y: 0
+--- !u!61 &818197159
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 818197156}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 2.5, y: 0.8}
 --- !u!1 &863509768
 GameObject:
   m_ObjectHideFlags: 0
@@ -566,6 +651,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 863509769}
   - 114: {fileID: 863509770}
+  - 61: {fileID: 863509771}
   m_Layer: 0
   m_Name: Storage Room
   m_TagString: Untagged
@@ -580,7 +666,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 863509768}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.89, y: 0.86, z: 0}
+  m_LocalPosition: {x: -0.845, y: 0.878, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -597,6 +683,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 820ea6e6a9b48894992ef2bbdcecc844, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  x: 0
+  y: 2
+--- !u!61 &863509771
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 863509768}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1.8, y: 0.8}
 --- !u!1 &1239728359
 GameObject:
   m_ObjectHideFlags: 0
@@ -606,6 +708,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1239728360}
   - 114: {fileID: 1239728361}
+  - 61: {fileID: 1239728362}
   m_Layer: 0
   m_Name: Kitchen
   m_TagString: Untagged
@@ -620,7 +723,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1239728359}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.28, y: -0.01, z: 0}
+  m_LocalPosition: {x: 0.271, y: -0.028, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -637,6 +740,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 820ea6e6a9b48894992ef2bbdcecc844, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  x: 1
+  y: 1
+--- !u!61 &1239728362
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1239728359}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 2.31, y: 0.8}
 --- !u!1 &1249928607
 GameObject:
   m_ObjectHideFlags: 0
@@ -803,6 +922,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1262540065}
   - 114: {fileID: 1262540066}
+  - 61: {fileID: 1262540067}
   m_Layer: 0
   m_Name: Ladder 2
   m_TagString: Untagged
@@ -817,7 +937,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1262540064}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.62, y: -0.94, z: 0}
+  m_LocalPosition: {x: 1.644, y: -0.891, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -834,6 +954,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 820ea6e6a9b48894992ef2bbdcecc844, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  x: 2
+  y: 2
+--- !u!61 &1262540067
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1262540064}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 0.2, y: 0.8}
 --- !u!1 &1372397872
 GameObject:
   m_ObjectHideFlags: 0
@@ -843,6 +979,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1372397873}
   - 114: {fileID: 1372397874}
+  - 61: {fileID: 1372397875}
   m_Layer: 0
   m_Name: Bedroom
   m_TagString: Untagged
@@ -857,7 +994,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1372397872}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.39, y: -0.92, z: 0}
+  m_LocalPosition: {x: 2.584, y: -0.896, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -874,6 +1011,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 820ea6e6a9b48894992ef2bbdcecc844, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  x: 2
+  y: 3
+--- !u!61 &1372397875
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1372397872}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1.7, y: 0.8}
 --- !u!1 &1389597734
 GameObject:
   m_ObjectHideFlags: 0
@@ -883,6 +1036,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1389597735}
   - 114: {fileID: 1389597736}
+  - 61: {fileID: 1389597737}
   m_Layer: 0
   m_Name: Ladder 1
   m_TagString: Untagged
@@ -897,7 +1051,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1389597734}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.61, y: -0.01, z: 0}
+  m_LocalPosition: {x: 1.641, y: -0.011, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -914,6 +1068,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 820ea6e6a9b48894992ef2bbdcecc844, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  x: 1
+  y: 2
+--- !u!61 &1389597737
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1389597734}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 0.2, y: 0.8}
 --- !u!1 &1559502217
 GameObject:
   m_ObjectHideFlags: 0
@@ -923,6 +1093,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1559502218}
   - 114: {fileID: 1559502219}
+  - 61: {fileID: 1559502220}
   m_Layer: 0
   m_Name: Living Room
   m_TagString: Untagged
@@ -937,7 +1108,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1559502217}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.8, y: 0.84, z: 0}
+  m_LocalPosition: {x: 0.835, y: 0.865, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -954,6 +1125,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 820ea6e6a9b48894992ef2bbdcecc844, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  x: 0
+  y: 3
+--- !u!61 &1559502220
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1559502217}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1.4, y: 0.8}
 --- !u!1 &1660889721
 GameObject:
   m_ObjectHideFlags: 0
@@ -963,6 +1150,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1660889722}
   - 114: {fileID: 1660889723}
+  - 61: {fileID: 1660889724}
   m_Layer: 0
   m_Name: Bathroom
   m_TagString: Untagged
@@ -977,7 +1165,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1660889721}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.32, y: -0.95, z: 0}
+  m_LocalPosition: {x: 0.35, y: -0.897, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -994,6 +1182,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 820ea6e6a9b48894992ef2bbdcecc844, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  x: 2
+  y: 1
+--- !u!61 &1660889724
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1660889721}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1.35, y: 0.8}
 --- !u!1 &1862032546
 GameObject:
   m_ObjectHideFlags: 0
@@ -1065,6 +1269,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1927976846}
   - 114: {fileID: 1927976847}
+  - 61: {fileID: 1927976848}
   m_Layer: 0
   m_Name: Air Lock Room
   m_TagString: Untagged
@@ -1079,7 +1284,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1927976845}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.1, y: 0.86, z: 0}
+  m_LocalPosition: {x: -3.136, y: 0.851, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -1096,6 +1301,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 820ea6e6a9b48894992ef2bbdcecc844, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  x: 0
+  y: 0
+--- !u!61 &1927976848
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1927976845}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 0.8, y: 0.8}
 --- !u!1 &1934076117
 GameObject:
   m_ObjectHideFlags: 0

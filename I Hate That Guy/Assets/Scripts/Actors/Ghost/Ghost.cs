@@ -54,5 +54,6 @@ public class Ghost : MonoBehaviour {
                 item.GetComponent<Pickupable>().InteractWith(other.gameObject);
             }
         }
+        // if (other.gameObject.GetComponent<Room>() != null)
     }
 }
