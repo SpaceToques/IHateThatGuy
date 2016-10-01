@@ -10,50 +10,72 @@ public class Danny : MonoBehaviour {
     // Ladder coords: [0,4], [1,2], [2,2]
 
     // grid coordinates of Danny
-    private int x, y;
-    private int x2, y2; // coordinates of next room he wants to visit.
+    private int a, b;
+    private int a2, b2; // coordinates of next room he wants to visit.
+
+    public float speed = 1.5f;
+    private float x, y;
 
 	// Use this for initialization
 	void Start () {
-	    // Figure out where to start
-
+        WalkTo(0, 2);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-	
-	}
+        x = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
+        y = Input.GetAxis("Vertical") * speed * Time.deltaTime;
+        transform.Translate(x, y, 0);
+    }
 
-    void Walk () {
+    void WalkTo (int a2, int b2) {
+        // Begin trek to a new room on the grid
+        if (this.b != b2) {
+            MoveToLadderFrom(this.a, this.b);
+            // Climb(b2-this.b)
+        }
+        // move left/right
+    }
+
+    // move to the ladder based on initial position
+    void MoveToLadderFrom(int a, int b) {
+        if (b != 2) { // if not the top floor
+            if (a < 3) { // to the left of the ladder
+
+            } else { // to the right of the ladder
+
+            }
+        } else {
+            // just move right
+        }
+    }
+
+    void Climb (int i) {
 
     }
 
-    void Climb () {
-
+    public int getA() {
+        return this.a;
     }
 
-    public int getX() {
-        return this.x;
+    public int getB() {
+        return this.b;
     }
 
-    public int getY() {
-        return this.y;
+    public void setA(int i) {
+        this.a = i;
     }
 
-    public void setX(int i) {
-        this.x = i;
+    public void setB(int i) {
+        this.b = i;
     }
 
-    public void setY(int i) {
-        this.y = i;
+    public int getNextA() {
+        return this.a2;
     }
 
-    public int getNextX() {
-        return this.x2;
-    }
-
-    public int getNextY() {
-        return this.y2;
+    public int getNextB() {
+        return this.b2;
     }
 
     public void setNextLocation() {
@@ -62,8 +84,8 @@ public class Danny : MonoBehaviour {
     
     void OnTriggerStay2D(Collider2D other) {
         if (other.gameObject.GetComponent<Room>() != null) {
-            this.x = other.gameObject.GetComponent<Room>().getX();
-            this.y = other.gameObject.GetComponent<Room>().getY();
+            this.a = other.gameObject.GetComponent<Room>().getX();
+            this.b = other.gameObject.GetComponent<Room>().getY();
             //Debug.Log("Danny is in (" + this.x + ", " + this.y + ")");
         }
     }
