@@ -13,9 +13,9 @@ TagManager:
   - UI
   - 
   - 
-  - Ship
-  - People
-  - Items
+  - 
+  - 
+  - 
   - 
   - 
   - 
@@ -40,4 +40,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: BG
+    uniqueID: 1926066927
+    locked: 0
+  - name: Ship
+    uniqueID: 3037497291
     locked: 0
