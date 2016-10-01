@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public abstract class Pickupable : Item {
+public abstract class Interactable : Item {
 
 	// Use this for initialization
 	void Start () {
@@ -12,9 +12,4 @@ public abstract class Pickupable : Item {
 	void Update () {
 	
 	}
-
-    public void InteractWith(GameObject i)
-    {
-
-    }
 }
