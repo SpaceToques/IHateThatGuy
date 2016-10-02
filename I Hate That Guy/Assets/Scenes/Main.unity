@@ -4501,9 +4501,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.11363602, y: 0}
   serializedVersion: 2
-  m_Size: {x: 1.75, y: 0.8}
+  m_Size: {x: 1.5227268, y: 0.8}
 --- !u!4 &554858500 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000011592546612, guid: 1767751a3b4705a4282c7ead193b6281,

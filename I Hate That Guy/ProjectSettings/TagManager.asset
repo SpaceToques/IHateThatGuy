@@ -56,3 +56,6 @@ TagManager:
   - name: Pickupable
     uniqueID: 1219412881
     locked: 0
+  - name: FG
+    uniqueID: 7136157
+    locked: 0
