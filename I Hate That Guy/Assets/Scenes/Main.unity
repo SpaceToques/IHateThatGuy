@@ -179,8 +179,11 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8b7bac04d818cf645a74b1d2e530cfde, type: 3}
   m_Name: 
-  m_EditorClassIdentifier:
+  m_EditorClassIdentifier: 
   speed: 1
+  dannysOffset: 0
+  roomX: 0
+  roomOffset: 0
 --- !u!50 &10869092
 Rigidbody2D:
   serializedVersion: 2
@@ -428,17 +431,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2efac68d703c8b4e89ccb7baa76185a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprites:
-  - {fileID: 21300000, guid: ffc553f17f91bb140aee6de535edee11, type: 3}
-  - {fileID: 21300000, guid: edb566b705c40f545a6e07b43e0c8e47, type: 3}
-  - {fileID: 21300000, guid: 8d3dc7131d954c94ab939b7514dbd082, type: 3}
-  - {fileID: 21300000, guid: dedf9b1d7b1a7064d9773c9964eebce6, type: 3}
-  - {fileID: 21300000, guid: d2ec9472eaae0bf4eb6450690b064e5a, type: 3}
-  - {fileID: 21300000, guid: c07cc2a8a9e4e204193c38c83c668c6d, type: 3}
-  - {fileID: 21300000, guid: 0e4fbdb5f547cf24fb7b83d7b77366d3, type: 3}
-  - {fileID: 21300000, guid: 96c898ebfa06ac64ea541730f9bcd16c, type: 3}
-  sprend: {fileID: 0}
-  SpriteToRender: {fileID: 0}
 --- !u!1 &272946321
 GameObject:
   m_ObjectHideFlags: 0
@@ -2278,7 +2270,7 @@ GameObject:
   - 114: {fileID: 315152724}
   - 61: {fileID: 315152725}
   m_Layer: 0
-  m_Name: Ladder 0
+  m_Name: Ladder 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2296,7 +2288,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1249928609}
-  m_RootOrder: 4
+  m_RootOrder: 12
 --- !u!114 &315152724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2310,6 +2302,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 4
   y: 2
+  offsetX: 0
 --- !u!61 &315152725
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4303,7 +4296,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1249928609}
-  m_RootOrder: 8
+  m_RootOrder: 7
 --- !u!114 &536324911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4317,6 +4310,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 3
   y: 1
+  offsetX: 0
 --- !u!61 &536324912
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6231,7 +6225,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1249928609}
-  m_RootOrder: 1
+  m_RootOrder: 9
 --- !u!114 &641517651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6245,6 +6239,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 1
   y: 2
+  offsetX: 0
 --- !u!61 &641517652
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6306,7 +6301,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1249928609}
-  m_RootOrder: 9
+  m_RootOrder: 0
 --- !u!114 &655084127
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6320,6 +6315,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
+  offsetX: 0
 --- !u!61 &655084128
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6468,7 +6464,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1249928609}
-  m_RootOrder: 5
+  m_RootOrder: 4
 --- !u!114 &818197158
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6482,6 +6478,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 1
+  offsetX: 0
 --- !u!61 &818197159
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6543,7 +6540,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1249928609}
-  m_RootOrder: 2
+  m_RootOrder: 10
 --- !u!114 &863509770
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6557,6 +6554,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 2
   y: 2
+  offsetX: 0
 --- !u!61 &863509771
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6731,7 +6729,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1249928609}
-  m_RootOrder: 6
+  m_RootOrder: 5
 --- !u!114 &1239728361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6745,6 +6743,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 1
   y: 1
+  offsetX: 0
 --- !u!61 &1239728362
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6840,19 +6839,19 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
+  - {fileID: 655084126}
+  - {fileID: 1660889722}
+  - {fileID: 1262540065}
+  - {fileID: 1372397873}
+  - {fileID: 818197157}
+  - {fileID: 1239728360}
+  - {fileID: 1389597735}
+  - {fileID: 536324910}
   - {fileID: 1927976846}
   - {fileID: 641517650}
   - {fileID: 863509769}
   - {fileID: 1559502218}
   - {fileID: 315152723}
-  - {fileID: 818197157}
-  - {fileID: 1239728360}
-  - {fileID: 1389597735}
-  - {fileID: 536324910}
-  - {fileID: 655084126}
-  - {fileID: 1660889722}
-  - {fileID: 1262540065}
-  - {fileID: 1372397873}
   m_Father: {fileID: 0}
   m_RootOrder: 2
 --- !u!68 &1249928610
@@ -6963,7 +6962,7 @@ GameObject:
   - 61: {fileID: 1262540067}
   - 50: {fileID: 1262540068}
   m_Layer: 0
-  m_Name: Ladder 2
+  m_Name: Ladder 0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6981,7 +6980,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1249928609}
-  m_RootOrder: 11
+  m_RootOrder: 2
 --- !u!114 &1262540066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6995,6 +6994,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 2
   y: 0
+  offsetX: 0
 --- !u!61 &1262540067
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7026,6 +7026,34 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!1 &1371782678
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1371782679}
+  m_Layer: 0
+  m_Name: GotoPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1371782679
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1371782678}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 1927976846}
+  m_RootOrder: 0
 --- !u!1 &1372397872
 GameObject:
   m_ObjectHideFlags: 0
@@ -7056,7 +7084,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1249928609}
-  m_RootOrder: 12
+  m_RootOrder: 3
 --- !u!114 &1372397874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7070,6 +7098,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 3
   y: 0
+  offsetX: 0
 --- !u!61 &1372397875
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7131,7 +7160,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1249928609}
-  m_RootOrder: 7
+  m_RootOrder: 6
 --- !u!114 &1389597736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7145,6 +7174,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 2
   y: 1
+  offsetX: 0
 --- !u!61 &1389597737
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7296,7 +7326,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1249928609}
-  m_RootOrder: 3
+  m_RootOrder: 11
 --- !u!114 &1559502219
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7310,6 +7340,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 3
   y: 2
+  offsetX: 0
 --- !u!61 &1559502220
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7457,7 +7488,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1249928609}
-  m_RootOrder: 10
+  m_RootOrder: 1
 --- !u!114 &1660889723
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7471,6 +7502,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 1
   y: 0
+  offsetX: 0
 --- !u!61 &1660889724
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7592,9 +7624,10 @@ Transform:
   m_LocalPosition: {x: -3.084, y: 0.796, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children: []
+  m_Children:
+  - {fileID: 1371782679}
   m_Father: {fileID: 1249928609}
-  m_RootOrder: 0
+  m_RootOrder: 8
 --- !u!114 &1927976847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7608,6 +7641,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 2
+  offsetX: 0
 --- !u!61 &1927976848
 BoxCollider2D:
   m_ObjectHideFlags: 0
