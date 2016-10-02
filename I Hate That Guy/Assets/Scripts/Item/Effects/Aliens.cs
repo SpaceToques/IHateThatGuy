@@ -2,9 +2,15 @@
 using System.Collections;
 
 public class Aliens : GameStateListener {
+
+    public GameObject laserPrefab;
+    private GameObject lasers;
+
     public override void aliensMad(bool aliensMad) {
         if (aliensMad) {
             Debug.Log("1000 Aliens cry out in anger!");
+            //instantiate the lasers as a child of the aliens
+            lasers = Instantiate(laserPrefab) as GameObject;
         }
 
         // make lasers visible if aliens are mad

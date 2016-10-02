@@ -2326,7 +2326,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4000011796121636, guid: 090cea98358dd904e9ebb2197c69b278, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 5.801124
+      value: 7.94
       objectReference: {fileID: 0}
     - target: {fileID: 4000011796121636, guid: 090cea98358dd904e9ebb2197c69b278, type: 2}
       propertyPath: m_LocalPosition.y
@@ -2361,6 +2361,18 @@ Prefab:
       propertyPath: gameStateObject
       value: 
       objectReference: {fileID: 1934076119}
+    - target: {fileID: 212000013843724916, guid: 090cea98358dd904e9ebb2197c69b278,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 82c2b2b10243e664e9be7385e399f3b0,
+        type: 3}
+    - target: {fileID: 114000012462428860, guid: 090cea98358dd904e9ebb2197c69b278,
+        type: 2}
+      propertyPath: laserPrefab
+      value: 
+      objectReference: {fileID: 1000010360141754, guid: 6ef8fc4cd35fc7840b4af3aeb81a0396,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 090cea98358dd904e9ebb2197c69b278, type: 2}
   m_IsPrefabParent: 0
@@ -2488,7 +2500,7 @@ ParticleSystem:
   moveWithTransform: 1
   autoRandomSeed: 1
   scalingMode: 1
-  randomSeed: 957758176
+  randomSeed: 1996894459
   InitialModule:
     serializedVersion: 2
     enabled: 1
@@ -7820,6 +7832,7 @@ MonoBehaviour:
   _aliensMad: 0
   _meterBroken: 0
   _shieldsDown: 0
+  _shipExploded: 0
 --- !u!1001 &2000542356
 Prefab:
   m_ObjectHideFlags: 0
