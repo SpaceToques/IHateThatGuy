@@ -437,7 +437,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 0.5, y: 0.25}
+  m_Size: {x: 0.21, y: 0.21}
 --- !u!114 &207128907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8419,8 +8419,7 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 114000011927136832, guid: c7e5e97b8b272e6489011b92038c91b6, type: 2}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c7e5e97b8b272e6489011b92038c91b6, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &1965192421 stripped
