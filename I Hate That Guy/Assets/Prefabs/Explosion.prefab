@@ -21,7 +21,7 @@ GameObject:
   - 4: {fileID: 4000011360520474}
   - 212: {fileID: 212000013033445108}
   m_Layer: 0
-  m_Name: New Sprite
+  m_Name: Explosion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
