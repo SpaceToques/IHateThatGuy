@@ -7869,7 +7869,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameStateObject: {fileID: 1934076119}
-  text: {fileID: 0}
 --- !u!114 &1527562730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8469,7 +8468,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4000010024481668, guid: f93de951619890f478364531c28adb37, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -5.406
+      value: -4.37
       objectReference: {fileID: 0}
     - target: {fileID: 4000010024481668, guid: f93de951619890f478364531c28adb37, type: 2}
       propertyPath: m_LocalPosition.y
@@ -8498,18 +8497,6 @@ Prefab:
     - target: {fileID: 4000010024481668, guid: f93de951619890f478364531c28adb37, type: 2}
       propertyPath: m_RootOrder
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000010024481668, guid: f93de951619890f478364531c28adb37, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 0.2580391
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000010024481668, guid: f93de951619890f478364531c28adb37, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 0.26516613
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000010024481668, guid: f93de951619890f478364531c28adb37, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 1.4987451
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f93de951619890f478364531c28adb37, type: 2}
@@ -8703,6 +8690,7 @@ MonoBehaviour:
   _meterBroken: 0
   _shieldsDown: 0
   _shipExploded: 0
+  _suitPunctured: 0
 --- !u!224 &1934076120
 RectTransform:
   m_ObjectHideFlags: 0
