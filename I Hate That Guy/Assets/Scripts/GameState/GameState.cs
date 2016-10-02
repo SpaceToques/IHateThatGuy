@@ -98,6 +98,8 @@ public class GameState : Listenable<GameStateListener> {
                 _shipExploded = value;
                 ForEachListener(listener => listener.shipExploded(shipExploded));
                 Debug.Log("Game State: Ship Exploded is " + shipExploded);
+
+                UnityEngine.SceneManagement.SceneManager.LoadScene("VictoryScene");
             }
         }
     }
