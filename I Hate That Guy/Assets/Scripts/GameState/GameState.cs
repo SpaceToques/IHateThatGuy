@@ -6,6 +6,22 @@ using System.Collections.Generic;
 [Serializable]
 public class GameState : Listenable<GameStateListener> {
 
+    // start by notifiying all listeners of intial values.
+    public override void Start() {
+        base.Start();
+
+        ForEachListener(listener => listener.fire(fire));
+        Debug.Log("Game State: Fire is " + fire);
+        ForEachListener(listener => listener.hullDamaged(hullDamaged));
+        Debug.Log("Game State: Hull Damaged is " + hullDamaged);
+        ForEachListener(listener => listener.aliensMad(aliensMad));
+        Debug.Log("Game State: Aliens Mad is " + aliensMad);
+        ForEachListener(listener => listener.meterBroken(meterBroken));
+        Debug.Log("Game State: Meter Broken is " + meterBroken);
+        ForEachListener(listener => listener.shieldsDown(shieldsDown));
+        Debug.Log("Game State: Shields Down is " + shieldsDown);
+    }
+
     public bool _fire;
     public bool fire
     {
