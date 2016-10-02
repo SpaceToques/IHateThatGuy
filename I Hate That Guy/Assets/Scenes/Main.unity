@@ -258,6 +258,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 50000010096633386, guid: 56326b84371c0154c81590ff4007fadf,
+        type: 2}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 56326b84371c0154c81590ff4007fadf, type: 2}
   m_IsPrefabParent: 0
@@ -468,6 +473,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011834213628, guid: e210492c5822a924d8fa124991be3db4, type: 2}
       propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 50000013821481340, guid: e210492c5822a924d8fa124991be3db4,
+        type: 2}
+      propertyPath: m_CollisionDetection
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -4512,6 +4522,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 50000010814242178, guid: a1b3e0ab6bd030a4eb2e8d34b4980e1d,
+        type: 2}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a1b3e0ab6bd030a4eb2e8d34b4980e1d, type: 2}
   m_IsPrefabParent: 0
@@ -7122,6 +7137,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 50000013341415248, guid: 53c6685f156dd69449506a4fa517a91f,
+        type: 2}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 53c6685f156dd69449506a4fa517a91f, type: 2}
   m_IsPrefabParent: 0
@@ -7618,6 +7638,11 @@ Prefab:
     - target: {fileID: 4000011679204176, guid: 253e87e8c2b25404a8f8c88a45f037cd, type: 2}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 50000010454260642, guid: 253e87e8c2b25404a8f8c88a45f037cd,
+        type: 2}
+      propertyPath: m_CollisionDetection
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 253e87e8c2b25404a8f8c88a45f037cd, type: 2}
@@ -8424,7 +8449,7 @@ Rigidbody2D:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!61 &1827265144
 BoxCollider2D:
@@ -8795,6 +8820,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 50000010836139178, guid: c7e5e97b8b272e6489011b92038c91b6,
+        type: 2}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c7e5e97b8b272e6489011b92038c91b6, type: 2}
   m_IsPrefabParent: 0
@@ -8841,6 +8871,11 @@ Prefab:
     - target: {fileID: 4000011592546612, guid: 1767751a3b4705a4282c7ead193b6281, type: 2}
       propertyPath: m_RootOrder
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 50000012913782666, guid: 1767751a3b4705a4282c7ead193b6281,
+        type: 2}
+      propertyPath: m_CollisionDetection
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1767751a3b4705a4282c7ead193b6281, type: 2}
