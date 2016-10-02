@@ -18,6 +18,7 @@ public class Danny : MonoBehaviour {
     private int vx, vy; // velocities
     public float dannysOffset; // to help with moving adequate amount
     public float roomX;
+    public float roomOffset;
 
     private float startOfMovingSlightly;
     private float moveToX;
@@ -58,10 +59,10 @@ public class Danny : MonoBehaviour {
                 vx = -1;
                 vy = 0;
             } else { // at the ladder
-                if (x < roomX) {
+                if (x < roomX+roomOffset) {
                     vx = 1;
                 }
-                else if (x > roomX) {
+                else if (x > roomX+roomOffset) {
                     vx = -1;
                 }
                 else {
@@ -72,10 +73,10 @@ public class Danny : MonoBehaviour {
         } else {
             // just move right
             if (a == 4) { // at ladder room
-                if (x < roomX) {
+                if (x < roomX+roomOffset) {
                     vx = 1;
                 }
-                else if (x > roomX) {
+                else if (x > roomX+roomOffset) {
                     vx = -1;
                 }
                 else {
@@ -130,6 +131,7 @@ public class Danny : MonoBehaviour {
             this.a = other.gameObject.GetComponent<Room>().getX();
             this.b = other.gameObject.GetComponent<Room>().getY();
             this.roomX = other.gameObject.GetComponent<Room>().x;
+            this.roomOffset = other.gameObject.GetComponent<Room>().getOffset();
             Debug.Log("Danny is in (" + this.a + ", " + this.b + ")");
         }
     }
