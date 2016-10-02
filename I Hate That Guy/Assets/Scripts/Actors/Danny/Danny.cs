@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using System;
 
 public class Danny : MonoBehaviour {
     // Danny is the guy who kills you at the beginning of the game, and is your target for the duration of the game
@@ -21,6 +22,7 @@ public class Danny : MonoBehaviour {
     public float roomOffset;
 
     private GameObject currentRoom;
+    private bool movingToCenterOfRoom = false;
 
     private float startOfMovingSlightly;
     private float moveToX;
@@ -29,26 +31,45 @@ public class Danny : MonoBehaviour {
     void Start () {
         WalkTo(0, 0);
         dannysOffset = gameObject.GetComponent<BoxCollider2D>().size.x / 2;
+        x = transform.position.x;
+        y = transform.position.y;
     }
 	
 	// Update is called once per frame
 	void Update () {
-        x = vx * speed * Time.deltaTime;
-        y = vy * speed * Time.deltaTime;
-        transform.Translate(x, y, 0);
         WalkTo(0, 0);
+
+        if (movingToCenterOfRoom) {
+            //Debug.Log("Moving to center of room (" + a + "," + b + ")");
+            // move immediately if we can
+            if (speed * Time.deltaTime > Math.Abs(roomX - x)) {
+                x = roomX;
+                movingToCenterOfRoom = false;
+                Debug.Log("Arrived at center of room (" + a + "," + b + ")");
+            } else {
+                x = x + Math.Sign(roomX - x) * speed * Time.deltaTime;
+            }
+
+            Debug.Log("Danny has x = " + x + " Room has x = " + roomX);
+            Debug.Log("Danny's speed = " + speed + " deltatime = " + Time.deltaTime);
+        } else {
+            x = x + vx * speed * Time.deltaTime;
+            y = y + vy * speed * Time.deltaTime;
+        }
+
+        transform.position = new Vector2(x, y);
     }
 
     void WalkTo (int a2, int b2) {
         // Begin trek to a new room on the grid
         if (this.b != b2) {
+            //Debug.Log("here0");
             if (((a==2) && (b==0)) || ((a==2) && (b==1)) || ((a==4) && (b==2))) { // if on a ladder "room"
-                x = currentRoom.GetComponent<Room>().getX();
-                y = currentRoom.GetComponent<Room>().getY();
-                vx = 0;
                 Climb(b2 - this.b);
+                Debug.Log("Here");
             } else {
                 MoveToLadderFrom(this.a, this.b);
+                //Debug.Log("There");
             }
         }
         // move left/right
@@ -99,8 +120,9 @@ public class Danny : MonoBehaviour {
         // if i is positive, climb up
         // if i is negative, climb down
         vx = 0;
-        vy = i/Mathf.Abs(i); // get either 1 or -1 for speed
+        vy = Math.Sign(i); // get either 1 or -1 for speed
 
+        Debug.Log("Climbing with vx = " + vx + " vy = " + vy);
     }
 
     public int getA() {
@@ -153,7 +175,11 @@ public class Danny : MonoBehaviour {
             this.roomX = other.gameObject.GetComponent<Room>().getX();
             this.roomOffset = other.gameObject.GetComponent<Room>().getOffset();
             this.currentRoom = other.gameObject;
+
+            this.movingToCenterOfRoom = true;
+
             Debug.Log("Danny is in (" + this.a + ", " + this.b + ")");
+            Debug.Log("Room has x = " + roomX);
         }
     }
 }
