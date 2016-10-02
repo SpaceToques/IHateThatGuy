@@ -14,12 +14,18 @@ public class Danny : MonoBehaviour {
     private int a2, b2; // coordinates of next room he wants to visit.
 
     public float speed = 1.5f;
-    private float x, y;
-    private int vx, vy;
+    private float x, y; // absolute point
+    private int vx, vy; // velocities
+    public float dannysOffset; // to help with moving adequate amount
+    public float roomX;
 
-	// Use this for initialization
-	void Start () {
-        WalkTo(0, 2);
+    private float startOfMovingSlightly;
+    private float moveToX;
+
+    // Use this for initialization
+    void Start () {
+        WalkTo(0, 0);
+        dannysOffset = gameObject.GetComponent<BoxCollider2D>().size.x / 2;
     }
 	
 	// Update is called once per frame
@@ -27,14 +33,13 @@ public class Danny : MonoBehaviour {
         x = vx * speed * Time.deltaTime;
         y = vy * speed * Time.deltaTime;
         transform.Translate(x, y, 0);
-        WalkTo(0, 2);
+        WalkTo(0, 0);
     }
 
     void WalkTo (int a2, int b2) {
         // Begin trek to a new room on the grid
         if (this.b != b2) {
             if (((a==2) && (b==0)) || ((a==2) && (b==1)) || ((a==4) && (b==2))) { // if on a ladder "room"
-                Debug.Log("TIME TO CLIMB BRUH");
                 Climb(b2 - this.b);
             } else {
                 MoveToLadderFrom(this.a, this.b);
@@ -52,15 +57,31 @@ public class Danny : MonoBehaviour {
             } else if (a > 3) { // to the right of the ladder
                 vx = -1;
                 vy = 0;
-            } else {
-                vx = 0;
-                vy = 0;
+            } else { // at the ladder
+                if (x < roomX) {
+                    vx = 1;
+                }
+                else if (x > roomX) {
+                    vx = -1;
+                }
+                else {
+                    vx = 0;
+                    vy = 0;
+                }
             }
         } else {
             // just move right
-            if (a == 4) { // at ladder
-                vx = 0;
-                vy = 0;
+            if (a == 4) { // at ladder room
+                if (x < roomX) {
+                    vx = 1;
+                }
+                else if (x > roomX) {
+                    vx = -1;
+                }
+                else {
+                    vx = 0;
+                    vy = 0;
+                }
             } else {
                 vx = 1;
                 vy = 0;
@@ -108,6 +129,7 @@ public class Danny : MonoBehaviour {
         if (other.gameObject.GetComponent<Room>() != null) {
             this.a = other.gameObject.GetComponent<Room>().getX();
             this.b = other.gameObject.GetComponent<Room>().getY();
+            this.roomX = other.gameObject.GetComponent<Room>().x;
             Debug.Log("Danny is in (" + this.a + ", " + this.b + ")");
         }
     }
