@@ -56,7 +56,7 @@ public class Ghost : MonoBehaviour {
         int dannysB = danny.GetComponent<Danny>().getB();
         if ((a== dannysA) && (b == dannysB) && (GetHeldItem() != null) ) // if in the same room as danny and holding somehting
         {
-            Debug.Log("YOU LOSEEEEE");
+            UnityEngine.SceneManagement.SceneManager.LoadScene("EndScene");
         }
     }
 
