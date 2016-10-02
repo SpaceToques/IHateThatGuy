@@ -59,7 +59,6 @@ public class GameState : Listenable<GameStateListener> {
                 ForEachListener(listener => listener.aliensMad(aliensMad));
                 Debug.Log("Game State: Aliens Mad is " + aliensMad);
             }
-
             updateShipExploded();
         }
     }

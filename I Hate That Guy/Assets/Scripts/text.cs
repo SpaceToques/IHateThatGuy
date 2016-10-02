@@ -19,12 +19,12 @@ public class text : MonoBehaviour {
 
     public void alienVoice()
     {
-        info.text = "Spooky Voice: We ArE cOmInG foR yUoOOoOOoO";
+        info.text = "Spooky Voice over the Radio: Hello Humans. We are going to destroy you now.";
+
     }
 
     public void shipExplode()
     {
         info.text = "GG EZ";
-        Debug.Log("GGEX");
     }
 }
