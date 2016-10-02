@@ -32,15 +32,18 @@ public class Danny : MonoBehaviour {
     private float startOfMovingSlightly;
     private float moveToX;
 
+    private Animator animator;
+
     // Use this for initialization
     void Start () {
-        WalkTo(0, 0);
         x = transform.position.x;
         y = transform.position.y;
+        animator = this.GetComponent<Animator>();
     }
 	
 	// Update is called once per frame
 	void Update () {
+
         if (arrived && Time.time - timeOfArrival > secondsBetweenMoves) {
             do {
                 System.Random rand = new System.Random();
@@ -86,6 +89,22 @@ public class Danny : MonoBehaviour {
         }
 
         transform.position = new Vector2(x, y);
+
+        Debug.Log("vx: " + vx);
+        // Animation
+        if (vx > 0)  {
+            animator.SetInteger("Direction", 1);
+        } else if (vx < 0) {
+            animator.SetInteger("Direction", 2);
+        }
+        if (vy != 0) {
+            animator.SetInteger("Direction", 0);
+        }
+        if ((vy == 0) && (vx == 0)) {
+            animator.SetInteger("Direction", 5);
+        }
+
+
     }
 
     void WalkTo (int a2, int b2) {
