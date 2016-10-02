@@ -4,6 +4,10 @@ using System;
 
 public class Wires : Interactable {
     protected override void InteractAction(GameObject interactor) {
-        throw new NotImplementedException();
+        if (interactor.GetComponent<Knife>() != null
+            || interactor.GetComponent<Scissors>() != null) {
+            gameState.wiresCut = true;
+            interactable = false;
+        }
     }
 }

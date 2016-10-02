@@ -23,4 +23,5 @@ public abstract class GameStateListener : MonoBehaviour, Listener
     public virtual void shieldsDown(bool shieldsDown) { }
     public virtual void shipExploded(bool shipExploded) { }
     public virtual void suitPunctured(bool suitPunctured) { }
+    public virtual void wiresCut(bool wiresCut) { }
 }

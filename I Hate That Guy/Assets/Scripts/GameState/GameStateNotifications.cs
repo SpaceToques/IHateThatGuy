@@ -39,4 +39,8 @@ public class GameStateNotifications : GameStateListener {
     public override void suitPunctured(bool suitPunctured) {
         if (suitPunctured) { text.text = "You put a hole in the spacesuit!"; }
     }
+    
+    public override void wiresCut(bool wiresCut) {
+        if (wiresCut) { text.text = "You cut wires to the engine!"; }
+    }
 }

@@ -7138,36 +7138,7 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 61000011509403960, guid: 1f976d46b41d4284db93e148ae1b15b1,
-        type: 2}
-      propertyPath: m_Offset.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 61000011509403960, guid: 1f976d46b41d4284db93e148ae1b15b1,
-        type: 2}
-      propertyPath: m_Size.y
-      value: 0.70731974
-      objectReference: {fileID: 0}
-    - target: {fileID: 61000011509403960, guid: 1f976d46b41d4284db93e148ae1b15b1,
-        type: 2}
-      propertyPath: m_Offset.x
-      value: 0.030386925
-      objectReference: {fileID: 0}
-    - target: {fileID: 61000011509403960, guid: 1f976d46b41d4284db93e148ae1b15b1,
-        type: 2}
-      propertyPath: m_Size.x
-      value: 0.52404165
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000010834837562, guid: 1f976d46b41d4284db93e148ae1b15b1, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 0.575
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000010834837562, guid: 1f976d46b41d4284db93e148ae1b15b1, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 0.65
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 212000014195474642, guid: 1f976d46b41d4284db93e148ae1b15b1, type: 2}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1f976d46b41d4284db93e148ae1b15b1, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &1188249681 stripped
@@ -8217,11 +8188,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4000013061551060, guid: 94566c0aad3ddbd49861c104854f1f90, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -4.49
+      value: -3.807
       objectReference: {fileID: 0}
     - target: {fileID: 4000013061551060, guid: 94566c0aad3ddbd49861c104854f1f90, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.975
+      value: 1.96
       objectReference: {fileID: 0}
     - target: {fileID: 4000013061551060, guid: 94566c0aad3ddbd49861c104854f1f90, type: 2}
       propertyPath: m_LocalPosition.z
@@ -8691,6 +8662,7 @@ MonoBehaviour:
   _shieldsDown: 0
   _shipExploded: 0
   _suitPunctured: 0
+  _wiresCut: 0
 --- !u!224 &1934076120
 RectTransform:
   m_ObjectHideFlags: 0
