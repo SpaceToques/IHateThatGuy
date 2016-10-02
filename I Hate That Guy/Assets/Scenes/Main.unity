@@ -7575,6 +7575,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameStateObject: {fileID: 1934076119}
   explosion: {fileID: 1000010744322362, guid: 3ce1588c85fef2a49acbdcfcc7b39b97, type: 2}
+  text: {fileID: 1311178077}
 --- !u!1001 &1258789662
 Prefab:
   m_ObjectHideFlags: 0

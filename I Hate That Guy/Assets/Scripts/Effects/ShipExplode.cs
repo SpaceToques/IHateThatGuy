@@ -3,6 +3,8 @@ using System.Collections;
 
 public class ShipExplode : GameStateListener {
     public Object explosion;
+    public text text;
+
 
 	// Use this for initialization
 	public override void Start () {
@@ -18,6 +20,7 @@ public class ShipExplode : GameStateListener {
     public override void shipExploded(bool shipExploded) {
         if (shipExploded) {
             Instantiate(explosion, this.transform);
+            text.shipExplode();
         }
     }
 }

@@ -21,4 +21,10 @@ public class text : MonoBehaviour {
     {
         info.text = "Spooky Voice: We ArE cOmInG foR yUoOOoOOoO";
     }
+
+    public void shipExplode()
+    {
+        info.text = "GG EZ";
+        Debug.Log("GGEX");
+    }
 }
