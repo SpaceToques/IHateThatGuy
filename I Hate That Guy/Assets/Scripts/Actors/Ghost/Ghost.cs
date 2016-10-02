@@ -1,5 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
+
+[Serializable]
 
 // is kinematic
 // item collider is trigger
@@ -13,10 +16,16 @@ public class Ghost : MonoBehaviour {
     public float maxHoldDist;
     private int a, b;
 
-	// Use this for initialization
-	void Start ()
+    public Sprite[] sprites;
+    private SpriteRenderer sprend;
+    Sprite SpriteToRender;
+
+    // Use this for initialization
+    void Start ()
     {
         item = null;
+        sprend = gameObject.GetComponent<SpriteRenderer>();
+        SpriteToRender = sprites[4];
     }
 
 	// Update is called once per frame
@@ -25,7 +34,9 @@ public class Ghost : MonoBehaviour {
         x = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
         y = Input.GetAxis("Vertical") * speed * Time.deltaTime;
         transform.Translate(x, y, 0);
-        
+
+        AnimateGhost(x, y);
+
         // drop item
         if (item != null)
         {
@@ -66,5 +77,44 @@ public class Ghost : MonoBehaviour {
             //Debug.Log("Player is in (" + this.a + ", " + this.b + ")");
         }
 
+    }
+
+    void AnimateGhost(float x, float y)
+    {
+        // Figures out the direction ghost is facing and animates accordingly
+        if (x < 0 && y < 0)
+        {
+            SpriteToRender = sprites[1];
+        }
+        else if (x > 0 && y < 0)
+        {
+            SpriteToRender = sprites[2];
+        }
+        else if (x < 0 && y > 0)
+        {
+            SpriteToRender = sprites[6];
+        }
+        else if (x > 0 && y > 0)
+        {
+            SpriteToRender = sprites[7];
+        }
+        else if (x > 0)
+        {
+            SpriteToRender = sprites[4];
+        }
+        else if (x < 0)
+        {
+            SpriteToRender = sprites[3];
+        }
+        else if (y > 0)
+        {
+            SpriteToRender = sprites[5];
+        }
+        else if (y < 0)
+        {
+            SpriteToRender = sprites[0];
+
+        }
+        sprend.sprite = SpriteToRender;
     }
 }
