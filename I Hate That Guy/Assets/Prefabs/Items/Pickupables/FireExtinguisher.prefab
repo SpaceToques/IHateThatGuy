@@ -24,10 +24,7 @@ GameObject:
   - 61: {fileID: 61000012199970588}
   - 61: {fileID: 61000010004681456}
   - 114: {fileID: 114000012695386940}
-  - 114: {fileID: 114000012229068978}
-  - 114: {fileID: 114000013544842702}
   - 114: {fileID: 114000013853819492}
-  - 114: {fileID: 114000012626898694}
   m_Layer: 9
   m_Name: FireExtinguisher
   m_TagString: Untagged
@@ -93,28 +90,6 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 0.23, y: 0.57}
---- !u!114 &114000012229068978
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011724527882}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6d8e15900ef67642ae6e75e6024e330, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114000012626898694
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011724527882}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67e1edf5179e49844b00ea1b3ebab7c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114000012695386940
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -127,17 +102,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   layerWhenHeld: Held
---- !u!114 &114000013544842702
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011724527882}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1e8142ab3a86964c8fcde308661c2e7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114000013853819492
 MonoBehaviour:
   m_ObjectHideFlags: 1

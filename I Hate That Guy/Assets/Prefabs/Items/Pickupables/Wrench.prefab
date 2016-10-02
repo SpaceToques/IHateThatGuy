@@ -24,10 +24,7 @@ GameObject:
   - 61: {fileID: 61000012458752094}
   - 61: {fileID: 61000012896746880}
   - 114: {fileID: 114000014223398328}
-  - 114: {fileID: 114000012680135654}
-  - 114: {fileID: 114000010496889378}
-  - 114: {fileID: 114000010304612564}
-  - 114: {fileID: 114000013159071950}
+  - 114: {fileID: 114000013697960534}
   m_Layer: 9
   m_Name: Wrench
   m_TagString: Untagged
@@ -93,40 +90,7 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 0.11, y: 0.34}
---- !u!114 &114000010304612564
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011569599650}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38d5900f037ca8b4daef171a7ac9faf8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114000010496889378
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011569599650}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1e8142ab3a86964c8fcde308661c2e7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114000012680135654
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011569599650}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6d8e15900ef67642ae6e75e6024e330, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114000013159071950
+--- !u!114 &114000013697960534
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}

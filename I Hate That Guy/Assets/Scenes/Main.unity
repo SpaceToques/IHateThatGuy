@@ -437,7 +437,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 0.5, y: 0.25}
+  m_Size: {x: 0.21, y: 0.21}
 --- !u!114 &207128907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4325,6 +4325,22 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
+--- !u!1 &414568409 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000012116160214, guid: a1b3e0ab6bd030a4eb2e8d34b4980e1d,
+    type: 2}
+  m_PrefabInternal: {fileID: 591898035}
+--- !u!114 &414568410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 414568409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cda7d78be4aa4fe47a5ddca0b064827c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &432906063 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000010349426884, guid: 4ee01b4666aa0354ebcf7d05a3539cd8,

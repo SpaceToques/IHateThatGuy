@@ -89,7 +89,7 @@ public class Danny : MonoBehaviour {
         }
 
         transform.position = new Vector2(x, y);
-
+        
         // Animation
         if (vx > 0)  {
             animator.SetInteger("Direction", 1);

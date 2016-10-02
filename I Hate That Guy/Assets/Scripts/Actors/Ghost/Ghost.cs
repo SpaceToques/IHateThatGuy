@@ -117,4 +117,8 @@ public class Ghost : MonoBehaviour {
         }
         sprend.sprite = SpriteToRender;
     }
+
+    public Pickupable GetHeldItem() {
+        return item;
+    }
 }

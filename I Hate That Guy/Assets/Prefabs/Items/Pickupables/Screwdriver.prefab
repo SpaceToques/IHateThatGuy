@@ -24,10 +24,7 @@ GameObject:
   - 61: {fileID: 61000013330626806}
   - 61: {fileID: 61000011207469528}
   - 114: {fileID: 114000011188640366}
-  - 114: {fileID: 114000013309959964}
   - 114: {fileID: 114000010346378422}
-  - 114: {fileID: 114000012795590650}
-  - 114: {fileID: 114000012086569338}
   m_Layer: 9
   m_Name: Screwdriver
   m_TagString: Untagged
@@ -116,39 +113,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   layerWhenHeld: Held
---- !u!114 &114000012086569338
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011020793112}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67e1edf5179e49844b00ea1b3ebab7c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114000012795590650
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011020793112}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38d5900f037ca8b4daef171a7ac9faf8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114000013309959964
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011020793112}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6d8e15900ef67642ae6e75e6024e330, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &212000012942119108
 SpriteRenderer:
   m_ObjectHideFlags: 1
