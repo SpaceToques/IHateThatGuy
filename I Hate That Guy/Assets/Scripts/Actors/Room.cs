@@ -39,6 +39,11 @@ public class Room : MonoBehaviour {
         return this.x;
     }
 
+    public float getY()
+    {
+        return this.y;
+    }
+
     public float getOffset() {
         return this.offsetX;
     }
