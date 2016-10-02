@@ -27,7 +27,7 @@ public class DannySpeech : MonoBehaviour
         Vector2 localPointOnCanvasRect;
         RectTransformUtility.ScreenPointToLocalPointInRectangle(canvas, dannyScreenPoint, null, out localPointOnCanvasRect);
         localPointOnCanvasRect.x = localPointOnCanvasRect.x + 330;
-        localPointOnCanvasRect.y = localPointOnCanvasRect.y + 175;
+        localPointOnCanvasRect.y = localPointOnCanvasRect.y + 200;
         text.position = localPointOnCanvasRect;
 
         a = danny.GetComponent<Danny>().getA();
