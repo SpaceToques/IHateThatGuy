@@ -10,6 +10,9 @@ public class Danny : MonoBehaviour {
     // 'room' segment, so we know the room he can move up in.
     // Ladder coords: [0,4], [1,2], [2,2]
 
+    // seconds waited after Danny arrives
+    [SerializeField] public float secondsBetweenMoves = 5;
+
     // grid coordinates of Danny
     private int a, b;
     private int a2, b2; // coordinates of next room he wants to visit.
@@ -17,14 +20,14 @@ public class Danny : MonoBehaviour {
     public float speed = 1.5f;
     private float x, y; // absolute point
     private int vx, vy; // velocities
-    public float dannysOffset; // to help with moving adequate amount
     public float roomX;
     public float roomY;
-    public float roomOffset;
 
     private GameObject currentRoom;
     private bool movingToCenterXOfRoom = false;
     private bool movingToCenterYOfRoom = false;
+    private bool arrived = true;
+    private float timeOfArrival;
 
     private float startOfMovingSlightly;
     private float moveToX;
@@ -32,14 +35,29 @@ public class Danny : MonoBehaviour {
     // Use this for initialization
     void Start () {
         WalkTo(0, 0);
-        dannysOffset = gameObject.GetComponent<BoxCollider2D>().size.x / 2;
         x = transform.position.x;
         y = transform.position.y;
     }
 	
 	// Update is called once per frame
 	void Update () {
-        WalkTo(0, 0);
+        if (arrived && Time.time - timeOfArrival > secondsBetweenMoves) {
+            do {
+                System.Random rand = new System.Random();
+                b2 = rand.Next() % 3;
+                a2 = -1;
+                if (a2 == 2) {
+                    a2 = rand.Next() % 5;
+                } else {
+                    a2 = rand.Next() % 4;
+                }
+            } while (IsLadder(a2, b2));
+            arrived = false;
+
+            Debug.Log("Danny Room Target set to (" + a2 + "," + b2 + ")");
+        }
+
+        WalkTo(a2, b2);
 
         if (movingToCenterXOfRoom) {
             //Debug.Log("Moving to center of room (" + a + "," + b + ")");
@@ -83,13 +101,19 @@ public class Danny : MonoBehaviour {
             // move left/right
             MoveToSameFloor(a2);
         }
+
+        if (!arrived && this.a == a2 && this.b == b2) {
+            timeOfArrival = Time.time;
+            Debug.Log("Danny has arrived at (" + a + "," + b + ") at t = " + timeOfArrival);
+            arrived = true;
+        }
     }
 
     private void MoveToSameFloor(int a2) {
         if (a > a2) {
             vx = -1;
             vy = 0;
-        } else if (a < a2 ) {
+        } else if (a < a2) {
             vx = 1;
             vy = 0;
         } else {
@@ -101,41 +125,17 @@ public class Danny : MonoBehaviour {
     // move to the ladder based on initial position
     void MoveToLadderFrom(int a, int b) {
         if (b != 2) { // if not the top floor
-            if (a < 3) { // to the left of the ladder
+            if (a < 2) { // to the left of the ladder
                 vx = 1;
                 vy = 0;
-            } else if (a > 3) { // to the right of the ladder
+            } else if (a > 2) { // to the right of the ladder
                 vx = -1;
                 vy = 0;
-            } else { // at the ladder
-                if (x < roomX+roomOffset) {
-                    vx = 1;
-                }
-                else if (x > roomX+roomOffset) {
-                    vx = -1;
-                }
-                else {
-                    vx = 0;
-                    vy = 0;
-                }
-            }
+            } 
         } else {
             // just move right
-            if (a == 4) { // at ladder room
-                if (x < roomX+roomOffset) {
-                    vx = 1;
-                }
-                else if (x > roomX+roomOffset) {
-                    vx = -1;
-                }
-                else {
-                    vx = 0;
-                    vy = 0;
-                }
-            } else {
-                vx = 1;
-                vy = 0;
-            }
+            vx = 1;
+            vy = 0;
         }
     }
 
@@ -197,15 +197,12 @@ public class Danny : MonoBehaviour {
             this.b = other.gameObject.GetComponent<Room>().getB();
             this.roomX = other.gameObject.GetComponent<Room>().getX();
             this.roomY = other.gameObject.GetComponent<Room>().getY();
-            this.roomOffset = other.gameObject.GetComponent<Room>().getOffset();
             this.currentRoom = other.gameObject;
 
             this.movingToCenterXOfRoom = true;
-            if (IsLadder(a, b)) { this.movingToCenterYOfRoom = true; Debug.Log("Moving to center Y "); }
+            if (IsLadder(a, b)) { this.movingToCenterYOfRoom = true; }
 
-            Debug.Log("Danny is in (" + this.a + ", " + this.b + ")");
-            Debug.Log("Room has x = " + roomX);
-            Debug.Log("Room has y = " + roomY);
+            //Debug.Log("Danny is in (" + this.a + ", " + this.b + ")");
         }
     }
 
