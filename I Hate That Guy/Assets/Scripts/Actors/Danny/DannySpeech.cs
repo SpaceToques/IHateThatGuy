@@ -42,7 +42,14 @@ public class DannySpeech : MonoBehaviour
                 }
                 else
                 {
-                    text.gameObject.GetComponent<Text>().text = "";
+                    if (a == 3)
+                    {
+                        text.gameObject.GetComponent<Text>().text = "Ghosts aren't real, right?";
+                    }
+                    else
+                    {
+                        text.gameObject.GetComponent<Text>().text = "";
+                    }
                 }
                 break;
             case 1:
@@ -56,13 +63,20 @@ public class DannySpeech : MonoBehaviour
                 }
                 break;
             case 2:
-                if (a == 1)
+                if (a == 0 || a == 1)
                 {
                     text.gameObject.GetComponent<Text>().text = "When I get home I will murder more people";
                 }
                 else
                 {
-                    text.gameObject.GetComponent<Text>().text = "";
+                    if (a == 3)
+                    {
+                        text.gameObject.GetComponent<Text>().text = "I'm scared of ghosts";
+                    }
+                    else
+                    {
+                        text.gameObject.GetComponent<Text>().text = "";
+                    }
                 }
                 break;
             default:
