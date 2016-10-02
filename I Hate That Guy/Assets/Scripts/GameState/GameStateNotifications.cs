@@ -35,4 +35,8 @@ public class GameStateNotifications : GameStateListener {
     public override void shipExploded(bool shipExploded) {
         if (shipExploded) { text.text = "You blew up the ship!"; }
     }
+
+    public override void suitPunctured(bool suitPunctured) {
+        if (suitPunctured) { text.text = "You put a hole in the spacesuit!"; }
+    }
 }

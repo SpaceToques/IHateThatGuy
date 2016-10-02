@@ -20,6 +20,8 @@ public class GameState : Listenable<GameStateListener> {
         Debug.Log("Game State: Meter Broken is " + meterBroken);
         ForEachListener(listener => listener.shieldsDown(shieldsDown));
         Debug.Log("Game State: Shields Down is " + shieldsDown);
+        ForEachListener(listener => listener.shipExploded(shipExploded));
+        Debug.Log("Game State: Ship Exploded is " + shipExploded);
     }
 
     public bool _fire;
@@ -97,6 +99,20 @@ public class GameState : Listenable<GameStateListener> {
                 _shipExploded = value;
                 ForEachListener(listener => listener.shipExploded(shipExploded));
                 Debug.Log("Game State: Ship Exploded is " + shipExploded);
+
+                UnityEngine.SceneManagement.SceneManager.LoadScene("VictoryScene");
+            }
+        }
+    }
+
+    public bool _suitPunctured;
+    public bool suitPunctured {
+        get { return _suitPunctured; }
+        set {
+            if (_suitPunctured != value) {
+                _suitPunctured = value;
+                ForEachListener(listener => listener.suitPunctured(suitPunctured));
+                Debug.Log("Game State: Suit Punctured is " + suitPunctured);
             }
         }
     }
