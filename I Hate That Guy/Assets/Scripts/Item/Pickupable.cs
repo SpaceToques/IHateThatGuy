@@ -22,7 +22,7 @@ public class Pickupable : Item {
 
         // Remove certain physics for held objects
         this.gameObject.layer = LayerMask.NameToLayer(layerWhenHeld);
-        this.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
+        this.gameObject.GetComponent<Rigidbody2D>().isKinematic = false;
     }
 
     public void Drop() {

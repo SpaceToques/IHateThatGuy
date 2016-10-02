@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class TextNotifications : GameStateListener {
+public class GameStateNotifications : GameStateListener {
     private Text text;
 
 
