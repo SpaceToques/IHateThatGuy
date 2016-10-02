@@ -7,7 +7,7 @@ using System;
 // is kinematic
 // item collider is trigger
 // ctrl to drop item, space to pick up, alt to use item on interactable
-public class Ghost : MonoBehaviour {
+public class Ghost : Listenable<GhostListener> {
 
     public float speed = 15;
     private Pickupable item;
@@ -23,8 +23,10 @@ public class Ghost : MonoBehaviour {
     private GameObject danny;
 
     // Use this for initialization
-    void Start ()
+    public override void Start ()
     {
+        base.Start();
+
         item = null;
         sprend = gameObject.GetComponent<SpriteRenderer>();
         SpriteToRender = sprites[4];
@@ -32,7 +34,8 @@ public class Ghost : MonoBehaviour {
     }
 
 	// Update is called once per frame
-	void Update () {
+	public override void Update () {
+        base.Update();
         // movement
         x = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
         y = Input.GetAxis("Vertical") * speed * Time.deltaTime;
@@ -49,6 +52,8 @@ public class Ghost : MonoBehaviour {
                 Debug.Log("Dropped " + item.gameObject);
                 item.Drop();
 
+                ForEachListener(listener => listener.GhostDropped(item.gameObject));
+
                 item = null;
             }
         }
@@ -56,7 +61,7 @@ public class Ghost : MonoBehaviour {
         int dannysB = danny.GetComponent<Danny>().getB();
         if ((a== dannysA) && (b == dannysB) && (GetHeldItem() != null) ) // if in the same room as danny and holding somehting
         {
-            Debug.Log("YOU LOSEEEEE");
+            UnityEngine.SceneManagement.SceneManager.LoadScene("EndScene");
         }
     }
 
@@ -70,6 +75,7 @@ public class Ghost : MonoBehaviour {
             item = other.gameObject.GetComponent<Pickupable>();
             item.PickUp(this.gameObject);
             Debug.Log("Picked up " + item.gameObject);
+            ForEachListener(listener => listener.GhostPickedUp(item.gameObject));
         }
         if (Input.GetButton("Jump")
                 && other.gameObject.GetComponent<Interactable>() != null)
