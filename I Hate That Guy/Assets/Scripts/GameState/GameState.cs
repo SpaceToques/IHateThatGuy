@@ -117,6 +117,18 @@ public class GameState : Listenable<GameStateListener> {
         }
     }
 
+    public bool _wiresCut;
+    public bool wiresCut {
+        get { return _wiresCut; }
+        set {
+            if (_wiresCut != value) {
+                _wiresCut = value;
+                ForEachListener(listener => listener.wiresCut(wiresCut));
+                Debug.Log("Game State: Wires Cut is " + wiresCut);
+            }
+        }
+    }
+
     private void updateShipExploded() {
         if (aliensMad && shieldsDown) {
             shipExploded = true;

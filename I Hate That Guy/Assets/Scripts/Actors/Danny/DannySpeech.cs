@@ -23,12 +23,14 @@ public class DannySpeech : MonoBehaviour
 
     void Update()
     {
-        Vector3 dannyScreenPoint = Camera.main.WorldToScreenPoint(danny.transform.position);
+        Vector3 dannyVec = danny.transform.position;
+        dannyVec.y += (float)0.40;
+        Vector3 dannyScreenPoint = Camera.main.WorldToScreenPoint(dannyVec);
         Vector2 localPointOnCanvasRect;
         RectTransformUtility.ScreenPointToLocalPointInRectangle(canvas, dannyScreenPoint, null, out localPointOnCanvasRect);
-        localPointOnCanvasRect.x = localPointOnCanvasRect.x + 330;
-        localPointOnCanvasRect.y = localPointOnCanvasRect.y + 175;
-        text.position = localPointOnCanvasRect;
+        //localPointOnCanvasRect.x = localPointOnCanvasRect.x + 330;
+        //localPointOnCanvasRect.y = localPointOnCanvasRect.y + 70;
+        text.anchoredPosition = localPointOnCanvasRect;
 
         a = danny.GetComponent<Danny>().getA();
         b = danny.GetComponent<Danny>().getB();

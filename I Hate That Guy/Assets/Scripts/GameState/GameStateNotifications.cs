@@ -26,7 +26,7 @@ public class GameStateNotifications : GameStateListener {
     }
 
     public override void meterBroken(bool meterBroken) {
-        if (meterBroken) { text.text = "You broke the fuel meter on the engine!"; }
+        if (meterBroken) { text.text = "You broke a seemingly important piece of the engine!"; }
     }
 
     public override void shieldsDown(bool shieldsDown) {
@@ -38,5 +38,9 @@ public class GameStateNotifications : GameStateListener {
 
     public override void suitPunctured(bool suitPunctured) {
         if (suitPunctured) { text.text = "You put a hole in the spacesuit!"; }
+    }
+    
+    public override void wiresCut(bool wiresCut) {
+        if (wiresCut) { text.text = "You cut wires to the engine!"; }
     }
 }
