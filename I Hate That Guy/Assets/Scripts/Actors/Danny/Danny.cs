@@ -27,7 +27,7 @@ public class Danny : MonoBehaviour {
     private bool movingToCenterXOfRoom = false;
     private bool movingToCenterYOfRoom = false;
     private bool arrived = true;
-    private float timeOfArrival;
+    private float timeOfArrival = 0;
 
     private float startOfMovingSlightly;
     private float moveToX;

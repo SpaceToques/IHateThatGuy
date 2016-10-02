@@ -347,7 +347,6 @@ GameObject:
   - 212: {fileID: 207128904}
   - 114: {fileID: 207128903}
   - 61: {fileID: 207128906}
-  - 114: {fileID: 207128907}
   m_Layer: 8
   m_Name: Ghost
   m_TagString: Untagged
@@ -439,17 +438,6 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 0.21, y: 0.21}
---- !u!114 &207128907
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 207128902}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2efac68d703c8b4e89ccb7baa76185a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &223198513
 GameObject:
   m_ObjectHideFlags: 0
@@ -7879,28 +7867,7 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 61000011141324828, guid: 4ee01b4666aa0354ebcf7d05a3539cd8,
-        type: 2}
-      propertyPath: m_Offset.x
-      value: 0.005702734
-      objectReference: {fileID: 0}
-    - target: {fileID: 61000011141324828, guid: 4ee01b4666aa0354ebcf7d05a3539cd8,
-        type: 2}
-      propertyPath: m_Size.x
-      value: 0.2695803
-      objectReference: {fileID: 0}
-    - target: {fileID: 61000011141324828, guid: 4ee01b4666aa0354ebcf7d05a3539cd8,
-        type: 2}
-      propertyPath: m_Offset.y
-      value: 0.039877474
-      objectReference: {fileID: 0}
-    - target: {fileID: 61000011141324828, guid: 4ee01b4666aa0354ebcf7d05a3539cd8,
-        type: 2}
-      propertyPath: m_Size.y
-      value: 0.3626492
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 212000010824685104, guid: 4ee01b4666aa0354ebcf7d05a3539cd8, type: 2}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4ee01b4666aa0354ebcf7d05a3539cd8, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1527562727
