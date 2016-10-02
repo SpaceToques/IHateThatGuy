@@ -20,6 +20,8 @@ public class Danny : MonoBehaviour {
     public float roomX;
     public float roomOffset;
 
+    private GameObject currentRoom;
+
     private float startOfMovingSlightly;
     private float moveToX;
 
@@ -41,6 +43,9 @@ public class Danny : MonoBehaviour {
         // Begin trek to a new room on the grid
         if (this.b != b2) {
             if (((a==2) && (b==0)) || ((a==2) && (b==1)) || ((a==4) && (b==2))) { // if on a ladder "room"
+                x = currentRoom.GetComponent<Room>().getX();
+                y = currentRoom.GetComponent<Room>().getY();
+                vx = 0;
                 Climb(b2 - this.b);
             } else {
                 MoveToLadderFrom(this.a, this.b);
@@ -127,11 +132,27 @@ public class Danny : MonoBehaviour {
     }
     
     void OnTriggerStay2D(Collider2D other) {
+        /*
         if (other.gameObject.GetComponent<Room>() != null) {
             this.a = other.gameObject.GetComponent<Room>().getA();
             this.b = other.gameObject.GetComponent<Room>().getB();
             this.roomX = other.gameObject.GetComponent<Room>().getX();
             this.roomOffset = other.gameObject.GetComponent<Room>().getOffset();
+            this.currentRoom = other.gameObject;
+            Debug.Log("Danny is in (" + this.a + ", " + this.b + ")");
+        }
+        */
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.GetComponent<Room>() != null)
+        {
+            this.a = other.gameObject.GetComponent<Room>().getA();
+            this.b = other.gameObject.GetComponent<Room>().getB();
+            this.roomX = other.gameObject.GetComponent<Room>().getX();
+            this.roomOffset = other.gameObject.GetComponent<Room>().getOffset();
+            this.currentRoom = other.gameObject;
             Debug.Log("Danny is in (" + this.a + ", " + this.b + ")");
         }
     }
