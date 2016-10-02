@@ -2300,8 +2300,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 820ea6e6a9b48894992ef2bbdcecc844, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  x: 4
-  y: 2
+  a: 4
+  b: 2
   offsetX: 0
 --- !u!61 &315152725
 BoxCollider2D:
@@ -4308,8 +4308,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 820ea6e6a9b48894992ef2bbdcecc844, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  x: 3
-  y: 1
+  a: 3
+  b: 1
   offsetX: 0
 --- !u!61 &536324912
 BoxCollider2D:
@@ -6311,8 +6311,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 820ea6e6a9b48894992ef2bbdcecc844, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  x: 1
-  y: 2
+  a: 1
+  b: 2
   offsetX: 0
 --- !u!61 &641517652
 BoxCollider2D:
@@ -6387,8 +6387,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 820ea6e6a9b48894992ef2bbdcecc844, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  x: 0
-  y: 0
+  a: 0
+  b: 0
   offsetX: 0
 --- !u!61 &655084128
 BoxCollider2D:
@@ -6550,8 +6550,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 820ea6e6a9b48894992ef2bbdcecc844, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  x: 0
-  y: 1
+  a: 0
+  b: 1
   offsetX: 0
 --- !u!61 &818197159
 BoxCollider2D:
@@ -6626,8 +6626,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 820ea6e6a9b48894992ef2bbdcecc844, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  x: 2
-  y: 2
+  a: 2
+  b: 2
   offsetX: 0
 --- !u!61 &863509771
 BoxCollider2D:
@@ -6815,8 +6815,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 820ea6e6a9b48894992ef2bbdcecc844, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  x: 1
-  y: 1
+  a: 1
+  b: 1
   offsetX: 0
 --- !u!61 &1239728362
 BoxCollider2D:
@@ -7067,8 +7067,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 820ea6e6a9b48894992ef2bbdcecc844, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  x: 2
-  y: 0
+  a: 2
+  b: 0
   offsetX: 0
 --- !u!61 &1262540067
 BoxCollider2D:
@@ -7101,34 +7101,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!1 &1371782678
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1371782679}
-  m_Layer: 0
-  m_Name: GotoPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1371782679
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1371782678}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children: []
-  m_Father: {fileID: 1927976846}
-  m_RootOrder: 0
 --- !u!1 &1372397872
 GameObject:
   m_ObjectHideFlags: 0
@@ -7171,8 +7143,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 820ea6e6a9b48894992ef2bbdcecc844, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  x: 3
-  y: 0
+  a: 3
+  b: 0
   offsetX: 0
 --- !u!61 &1372397875
 BoxCollider2D:
@@ -7247,8 +7219,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 820ea6e6a9b48894992ef2bbdcecc844, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  x: 2
-  y: 1
+  a: 2
+  b: 1
   offsetX: 0
 --- !u!61 &1389597737
 BoxCollider2D:
@@ -7408,8 +7380,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 820ea6e6a9b48894992ef2bbdcecc844, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  x: 3
-  y: 2
+  a: 3
+  b: 2
   offsetX: 0
 --- !u!61 &1559502220
 BoxCollider2D:
@@ -7570,8 +7542,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 820ea6e6a9b48894992ef2bbdcecc844, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  x: 1
-  y: 0
+  a: 1
+  b: 0
   offsetX: 0
 --- !u!61 &1660889724
 BoxCollider2D:
@@ -7694,8 +7666,7 @@ Transform:
   m_LocalPosition: {x: -3.084, y: 0.796, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children:
-  - {fileID: 1371782679}
+  m_Children: []
   m_Father: {fileID: 1249928609}
   m_RootOrder: 8
 --- !u!114 &1927976847
@@ -7709,8 +7680,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 820ea6e6a9b48894992ef2bbdcecc844, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  x: 0
-  y: 2
+  a: 0
+  b: 2
   offsetX: 0
 --- !u!61 &1927976848
 BoxCollider2D:

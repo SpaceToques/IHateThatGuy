@@ -128,9 +128,9 @@ public class Danny : MonoBehaviour {
     
     void OnTriggerStay2D(Collider2D other) {
         if (other.gameObject.GetComponent<Room>() != null) {
-            this.a = other.gameObject.GetComponent<Room>().getX();
-            this.b = other.gameObject.GetComponent<Room>().getY();
-            this.roomX = other.gameObject.GetComponent<Room>().x;
+            this.a = other.gameObject.GetComponent<Room>().getA();
+            this.b = other.gameObject.GetComponent<Room>().getB();
+            this.roomX = other.gameObject.GetComponent<Room>().getX();
             this.roomOffset = other.gameObject.GetComponent<Room>().getOffset();
             Debug.Log("Danny is in (" + this.a + ", " + this.b + ")");
         }

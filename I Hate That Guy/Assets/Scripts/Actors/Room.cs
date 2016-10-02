@@ -5,8 +5,10 @@ using System;
 [Serializable]
 public class Room : MonoBehaviour {
 
-    public int x;
-    public int y;
+    public int a, b;
+
+    private float x;
+    private float y;
 
     public float offsetX;
 
@@ -14,6 +16,9 @@ public class Room : MonoBehaviour {
 	void Start () {
         Vector2 boxsize = gameObject.GetComponent<BoxCollider2D>().size;
         offsetX = boxsize.x / 2;
+        x = gameObject.transform.position.x;
+        y = gameObject.transform.position.y;
+
 	}
 	
 	// Update is called once per frame
@@ -21,12 +26,17 @@ public class Room : MonoBehaviour {
 	
 	}
 
-    public int getX () {
-        return this.x;
+    public int getA () {
+        return this.a;
     }
 
-    public int getY() {
-        return this.y;
+    public int getB() {
+        return this.b;
+    }
+
+    public float getX()
+    {
+        return this.x;
     }
 
     public float getOffset() {
