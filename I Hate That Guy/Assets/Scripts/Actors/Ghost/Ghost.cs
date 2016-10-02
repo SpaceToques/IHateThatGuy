@@ -20,12 +20,15 @@ public class Ghost : MonoBehaviour {
     private SpriteRenderer sprend;
     Sprite SpriteToRender;
 
+    private GameObject danny;
+
     // Use this for initialization
     void Start ()
     {
         item = null;
         sprend = gameObject.GetComponent<SpriteRenderer>();
         SpriteToRender = sprites[4];
+        danny = GameObject.Find("Danny");
     }
 
 	// Update is called once per frame
@@ -48,6 +51,12 @@ public class Ghost : MonoBehaviour {
 
                 item = null;
             }
+        }
+        int dannysA = danny.GetComponent<Danny>().getA();
+        int dannysB = danny.GetComponent<Danny>().getB();
+        if ((a== dannysA) && (b == dannysB) && (GetHeldItem() != null) ) // if in the same room as danny and holding somehting
+        {
+            Debug.Log("YOU LOSEEEEE");
         }
     }
 
