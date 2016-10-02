@@ -85,4 +85,16 @@ public class GameState : Listenable<GameStateListener> {
             }
         }
     }
+
+    public bool _shipExploded;
+    public bool shipExploded {
+        get { return _shipExploded; }
+        set {
+            if (_shipExploded != value) {
+                _shipExploded = value;
+                ForEachListener(listener => listener.shipExploded(shipExploded));
+                Debug.Log("Game State: Ship Exploded is " + shipExploded);
+            }
+        }
+    }
 }

@@ -12,7 +12,7 @@ public class Aliens : GameStateListener {
 
         // if shields are down, blow up the ship
         if (aliensMad && gameStateObject.shieldsDown) {
-            // TODO
+            gameStateObject.shipExploded = true;
         }
     }
 }

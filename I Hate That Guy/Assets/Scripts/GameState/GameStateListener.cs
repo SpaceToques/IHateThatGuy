@@ -12,9 +12,14 @@ public abstract class GameStateListener : MonoBehaviour, Listener
         gameStateObject.AddListener(this);
     }
 
+    public virtual void Update() {
+
+    }
+
     public virtual void hullDamaged(bool hullDamaged) { }
     public virtual void fire(bool fire) { }
     public virtual void aliensMad(bool aliensMad) { }
     public virtual void meterBroken(bool meterBroken) { }
     public virtual void shieldsDown(bool shieldsDown) { }
+    public virtual void shipExploded(bool shipExploded) { }
 }
