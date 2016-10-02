@@ -19,6 +19,12 @@ public class Aliens : GameStateListener {
 
             //instantiate the damage particles in front of the ship
             damageParticles = Instantiate(damageParticlesPrefab, damageParticlesPrefab.transform.position, damageParticlesPrefab.transform.rotation) as GameObject;
+            this.gameObject.GetComponent<AudioSource>().Play();
+        }
+
+        if (!aliensMad)
+        {
+            this.gameObject.GetComponent<AudioSource>().Stop();
         }
 
         // make lasers visible if aliens are mad
