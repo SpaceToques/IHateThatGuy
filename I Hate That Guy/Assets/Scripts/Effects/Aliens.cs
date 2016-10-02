@@ -29,10 +29,5 @@ public class Aliens : GameStateListener {
 
         // make lasers visible if aliens are mad
         this.gameObject.GetComponent<SpriteRenderer>().enabled = aliensMad;
-
-        // if shields are down, blow up the ship
-        if (aliensMad && gameStateObject.shieldsDown) {
-            gameStateObject.shipExploded = true;
-        }
     }
 }

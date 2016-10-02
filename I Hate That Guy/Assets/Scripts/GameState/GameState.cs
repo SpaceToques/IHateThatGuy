@@ -59,6 +59,8 @@ public class GameState : Listenable<GameStateListener> {
                 ForEachListener(listener => listener.aliensMad(aliensMad));
                 Debug.Log("Game State: Aliens Mad is " + aliensMad);
             }
+
+            updateShipExploded();
         }
     }
 
@@ -83,6 +85,8 @@ public class GameState : Listenable<GameStateListener> {
                 ForEachListener(listener => listener.shieldsDown(shieldsDown));
                 Debug.Log("Game State: Shields Down is " + shieldsDown);
             }
+
+            updateShipExploded();
         }
     }
 
@@ -95,6 +99,12 @@ public class GameState : Listenable<GameStateListener> {
                 ForEachListener(listener => listener.shipExploded(shipExploded));
                 Debug.Log("Game State: Ship Exploded is " + shipExploded);
             }
+        }
+    }
+
+    private void updateShipExploded() {
+        if (aliensMad && shieldsDown) {
+            shipExploded = true;
         }
     }
 }
