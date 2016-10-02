@@ -183,6 +183,7 @@ MonoBehaviour:
   speed: 1
   dannysOffset: 0
   roomX: 0
+  roomY: 0
   roomOffset: 0
 --- !u!50 &10869092
 Rigidbody2D:
@@ -7300,6 +7301,7 @@ GameObject:
   - 249: {fileID: 1249928611}
   - 61: {fileID: 1249928612}
   - 50: {fileID: 1249928613}
+  - 114: {fileID: 1249928614}
   m_Layer: 0
   m_Name: Ship
   m_TagString: Untagged
@@ -7463,6 +7465,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1249928614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1249928607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88a2a2ec869c51a4e8a7a26b4eaebd9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameStateObject: {fileID: 1934076119}
+  explosion: {fileID: 1000010744322362, guid: 3ce1588c85fef2a49acbdcfcc7b39b97, type: 2}
 --- !u!1001 &1258789662
 Prefab:
   m_ObjectHideFlags: 0
