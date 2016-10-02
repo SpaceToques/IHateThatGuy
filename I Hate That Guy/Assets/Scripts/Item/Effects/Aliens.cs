@@ -5,8 +5,14 @@ public class Aliens : GameStateListener {
     public override void aliensMad(bool aliensMad) {
         if (aliensMad) {
             Debug.Log("1000 Aliens cry out in anger!");
+        }
 
-            this.gameObject.GetComponent<Rigidbody>().velocity = new Vector3(-1f, 0, 0);
+        // make lasers visible if aliens are mad
+        this.gameObject.GetComponent<SpriteRenderer>().enabled = aliensMad;
+
+        // if shields are down, blow up the ship
+        if (aliensMad && gameStateObject.shieldsDown) {
+            // TODO
         }
     }
 }
