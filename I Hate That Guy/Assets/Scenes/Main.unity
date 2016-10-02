@@ -179,10 +179,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8b7bac04d818cf645a74b1d2e530cfde, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
-<<<<<<< HEAD
-  speed: 1.5
-=======
+  m_EditorClassIdentifier:
   speed: 1
 --- !u!50 &10869092
 Rigidbody2D:
@@ -201,7 +198,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
->>>>>>> 5a631a8a3a23b159d8bca76a5802ad59fbf68586
 --- !u!1001 &11802681
 Prefab:
   m_ObjectHideFlags: 0
