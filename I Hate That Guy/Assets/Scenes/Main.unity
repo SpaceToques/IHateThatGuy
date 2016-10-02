@@ -102,7 +102,7 @@ GameObject:
   - 61: {fileID: 10869090}
   - 114: {fileID: 10869091}
   - 50: {fileID: 10869092}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: Danny
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -149,7 +149,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 10869087}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2, y: 0, z: 0}
+  m_LocalPosition: {x: -2.13, y: -0.02, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -193,7 +193,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -6901,7 +6901,7 @@ AreaEffector2D:
   m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 513
   m_UseGlobalAngle: 0
   m_ForceAngle: -90
   m_ForceMagnitude: 10

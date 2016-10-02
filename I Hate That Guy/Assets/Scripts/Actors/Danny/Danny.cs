@@ -33,9 +33,12 @@ public class Danny : MonoBehaviour {
     void WalkTo (int a2, int b2) {
         // Begin trek to a new room on the grid
         if (this.b != b2) {
-            MoveToLadderFrom(this.a, this.b);
-            //if ((a==0 && b==2) || )
-                //Climb(b2-this.b)
+            if (((a==2) && (b==0)) || ((a==2) && (b==1)) || ((a==4) && (b==2))) { // if on a ladder "room"
+                Debug.Log("TIME TO CLIMB BRUH");
+                Climb(b2 - this.b);
+            } else {
+                MoveToLadderFrom(this.a, this.b);
+            }
         }
         // move left/right
     }
@@ -55,10 +58,21 @@ public class Danny : MonoBehaviour {
             }
         } else {
             // just move right
+            if (a == 4) { // at ladder
+                vx = 0;
+                vy = 0;
+            } else {
+                vx = 1;
+                vy = 0;
+            }
         }
     }
 
     void Climb (int i) {
+        // if i is positive, climb up
+        // if i is negative, climb down
+        vx = 0;
+        vy = i/Mathf.Abs(i); // get either 1 or -1 for speed
 
     }
 
@@ -94,7 +108,7 @@ public class Danny : MonoBehaviour {
         if (other.gameObject.GetComponent<Room>() != null) {
             this.a = other.gameObject.GetComponent<Room>().getX();
             this.b = other.gameObject.GetComponent<Room>().getY();
-            //Debug.Log("Danny is in (" + this.a + ", " + this.b + ")");
+            Debug.Log("Danny is in (" + this.a + ", " + this.b + ")");
         }
     }
 }
