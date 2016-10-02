@@ -6,7 +6,7 @@ using System;
 
 // is kinematic
 // item collider is trigger
-// ctrl to drop item, space to pick up, alt to use item on interactable
+// ctrl to drop item, space to pick up, space to use item on interactable
 public class Ghost : Listenable<GhostListener> {
 
     public float speed = 15;
