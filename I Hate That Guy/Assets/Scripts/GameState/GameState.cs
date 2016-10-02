@@ -50,7 +50,7 @@ public class GameState : Listenable<GameStateListener> {
     public bool meterBroken { 
         get { return _meterBroken; }
         set {
-            if (_meterBroken) {
+            if (_meterBroken != value) {
                 _meterBroken = value;
                 ForEachListener(listener => listener.meterBroken(meterBroken));
                 Debug.Log("Game State: Meter Broken is " + meterBroken);
@@ -62,7 +62,7 @@ public class GameState : Listenable<GameStateListener> {
     public bool shieldsDown {
         get { return _shieldsDown; }
         set {
-            if (_shieldsDown) {
+            if (_shieldsDown != value) {
                 _shieldsDown = value;
                 ForEachListener(listener => listener.shieldsDown(shieldsDown));
                 Debug.Log("Game State: Shields Down is " + shieldsDown);

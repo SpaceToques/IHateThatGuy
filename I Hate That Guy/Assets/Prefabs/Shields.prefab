@@ -21,8 +21,8 @@ GameObject:
   - 4: {fileID: 4000010349426884}
   - 212: {fileID: 212000010824685104}
   - 61: {fileID: 61000011141324828}
-  - 114: {fileID: 114000013577489634}
   - 50: {fileID: 50000013215028338}
+  - 114: {fileID: 114000013739166066}
   m_Layer: 9
   m_Name: Shields
   m_TagString: Untagged
@@ -69,12 +69,12 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 0.6, y: 0.45}
---- !u!114 &114000013577489634
+--- !u!114 &114000013739166066
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
