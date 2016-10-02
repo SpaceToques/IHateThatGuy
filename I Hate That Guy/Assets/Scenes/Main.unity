@@ -2373,6 +2373,12 @@ Prefab:
       value: 
       objectReference: {fileID: 1000010360141754, guid: 6ef8fc4cd35fc7840b4af3aeb81a0396,
         type: 2}
+    - target: {fileID: 114000012462428860, guid: 090cea98358dd904e9ebb2197c69b278,
+        type: 2}
+      propertyPath: damageParticlesPrefab
+      value: 
+      objectReference: {fileID: 1000011414839318, guid: 901aacd261c239b4ca4176c82c707843,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 090cea98358dd904e9ebb2197c69b278, type: 2}
   m_IsPrefabParent: 0
