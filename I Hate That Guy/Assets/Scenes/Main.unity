@@ -181,11 +181,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b7bac04d818cf645a74b1d2e530cfde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
-  dannysOffset: 0
+  secondsBetweenMoves: 5
+  speed: 1.5
   roomX: 0
   roomY: 0
-  roomOffset: 0
 --- !u!50 &10869092
 Rigidbody2D:
   serializedVersion: 2
