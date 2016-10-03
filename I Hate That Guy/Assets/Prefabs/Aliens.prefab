@@ -37,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011132329256}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.801124, y: -0.4585201, z: 0}
+  m_LocalPosition: {x: 7.94, y: -0.4585201, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -69,7 +69,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: dcdedcb57dd10584cada7c946e608e47, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -120,7 +120,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -144,8 +144,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameStateObject: {fileID: 0}
-  laserPrefab: {fileID: 0}
-  damageParticlesPrefab: {fileID: 0}
+  laserPrefab: {fileID: 1000010360141754, guid: 6ef8fc4cd35fc7840b4af3aeb81a0396,
+    type: 2}
+  damageParticlesPrefab: {fileID: 1000011414839318, guid: 901aacd261c239b4ca4176c82c707843,
+    type: 2}
+  text: {fileID: 0}
 --- !u!212 &212000013843724916
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -175,7 +178,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 82c2b2b10243e664e9be7385e399f3b0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

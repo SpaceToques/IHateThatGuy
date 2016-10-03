@@ -5,6 +5,7 @@ public class Aliens : GameStateListener {
 
     public GameObject laserPrefab;
     public GameObject damageParticlesPrefab;
+    public text text;
     private GameObject lasers;
     private GameObject damageParticles;
     //http://soundbible.com/1802-Alien-Machine-Gun.html
@@ -12,7 +13,7 @@ public class Aliens : GameStateListener {
     public override void aliensMad(bool aliensMad) {
         if (aliensMad) {
             Debug.Log("1000 Aliens cry out in anger!");
-
+            text.alienVoice();
             //instantiate the lasers as a child of the aliens
             lasers = Instantiate(laserPrefab, gameObject.transform.position, laserPrefab.transform.rotation) as GameObject;
             lasers.transform.SetParent(gameObject.transform);

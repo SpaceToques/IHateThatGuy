@@ -61,7 +61,6 @@ public class GameState : Listenable<GameStateListener> {
                 ForEachListener(listener => listener.aliensMad(aliensMad));
                 Debug.Log("Game State: Aliens Mad is " + aliensMad);
             }
-
             updateShipExploded();
         }
     }
@@ -114,6 +113,18 @@ public class GameState : Listenable<GameStateListener> {
                 _suitPunctured = value;
                 ForEachListener(listener => listener.suitPunctured(suitPunctured));
                 Debug.Log("Game State: Suit Punctured is " + suitPunctured);
+            }
+        }
+    }
+
+    public bool _wiresCut;
+    public bool wiresCut {
+        get { return _wiresCut; }
+        set {
+            if (_wiresCut != value) {
+                _wiresCut = value;
+                ForEachListener(listener => listener.wiresCut(wiresCut));
+                Debug.Log("Game State: Wires Cut is " + wiresCut);
             }
         }
     }
