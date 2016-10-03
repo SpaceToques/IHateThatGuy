@@ -2492,29 +2492,21 @@ Prefab:
       propertyPath: gameStateObject
       value: 
       objectReference: {fileID: 1934076119}
-    - target: {fileID: 212000013843724916, guid: 090cea98358dd904e9ebb2197c69b278,
-        type: 2}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 82c2b2b10243e664e9be7385e399f3b0,
-        type: 3}
-    - target: {fileID: 114000012462428860, guid: 090cea98358dd904e9ebb2197c69b278,
-        type: 2}
-      propertyPath: laserPrefab
-      value: 
-      objectReference: {fileID: 1000010360141754, guid: 6ef8fc4cd35fc7840b4af3aeb81a0396,
-        type: 2}
-    - target: {fileID: 114000012462428860, guid: 090cea98358dd904e9ebb2197c69b278,
-        type: 2}
-      propertyPath: damageParticlesPrefab
-      value: 
-      objectReference: {fileID: 1000011414839318, guid: 901aacd261c239b4ca4176c82c707843,
-        type: 2}
     - target: {fileID: 114000012462428860, guid: 090cea98358dd904e9ebb2197c69b278,
         type: 2}
       propertyPath: text
       value: 
       objectReference: {fileID: 1311178077}
+    - target: {fileID: 82000011786472552, guid: 090cea98358dd904e9ebb2197c69b278,
+        type: 2}
+      propertyPath: spreadCustomCurve.m_RotationOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 82000011786472552, guid: 090cea98358dd904e9ebb2197c69b278,
+        type: 2}
+      propertyPath: m_Volume
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 090cea98358dd904e9ebb2197c69b278, type: 2}
   m_IsPrefabParent: 0
